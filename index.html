@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USWDS Starter</title>
+  <link rel="stylesheet" href="dist/uswds/css/uswds.min.css">
+  <link rel="stylesheet" href="dist/fpac-style/styles/fpac-design-system.css">
+</head>
+<body>
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+  <header class="usa-header usa-header--basic">
+    <div class="usa-nav-container">
+      <div class="usa-navbar">
+        <div class="usa-logo">
+          <em class="usa-logo__text">
+            <a href="/" title="USWDS Starter">USWDS Starter</a>
+          </em>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="usa-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="tablet:grid-col-8">
+            <h1 class="font-heading-xl margin-top-0">USWDS Starter Template</h1>
+            <p class="usa-intro">
+              A clean, forkable starter template built on the U.S. Web Design System (USWDS).
+              Everything you need to launch an accessible, mobile-friendly site.
+            </p>
+
+            <h2 class="font-heading-lg">Getting Started</h2>
+            <ol class="usa-list">
+              <li>
+                <strong>Install dependencies</strong>
+                <pre class="bg-base-lightest padding-2 margin-y-1"><code>npm install</code></pre>
+              </li>
+              <li>
+                <strong>Build assets</strong>
+                <pre class="bg-base-lightest padding-2 margin-y-1"><code>npm run build</code></pre>
+              </li>
+              <li>
+                <strong>Start development server</strong>
+                <pre class="bg-base-lightest padding-2 margin-y-1"><code>npm run serve</code></pre>
+              </li>
+            </ol>
+
+            <h2 class="font-heading-lg">What's Included</h2>
+            <ul class="usa-list">
+              <li><strong>USWDS 3.13.0</strong> — The complete U.S. Web Design System</li>
+              <li><strong>SCSS tokens</strong> — Customizable design tokens in <code>src/styles/tokens/</code></li>
+              <li><strong>Fonts</strong> — Public Sans, Merriweather, Source Sans Pro, Roboto Mono</li>
+              <li><strong>Build system</strong> — Gulp-based compilation with USWDS Compile</li>
+            </ul>
+
+            <h2 class="font-heading-lg">Required Files</h2>
+            <p>Include these in your HTML:</p>
+            <pre class="bg-base-lightest padding-2 margin-y-1"><code>&lt;!-- CSS --&gt;
+&lt;link rel="stylesheet" href="dist/uswds/css/uswds.min.css"&gt;
+&lt;link rel="stylesheet" href="dist/fpac-style/styles/fpac-design-system.css"&gt;
+
+&lt;!-- JavaScript (before closing body tag) --&gt;
+&lt;script src="dist/uswds/js/uswds.min.js"&gt;&lt;/script&gt;</code></pre>
+
+            <h2 class="font-heading-lg">Project Structure</h2>
+            <pre class="bg-base-lightest padding-2 margin-y-1"><code>uswds-starter/
+├── src/
+│   ├── styles/        # SCSS source files
+│   │   ├── tokens/    # Design tokens (colors, typography, etc.)
+│   │   └── index.scss # Main entry point
+│   ├── fonts/         # Web fonts
+│   └── images/        # Logo and image assets
+├── dist/              # Compiled output (generated)
+├── gulpfile.js        # Build configuration
+├── package.json       # Dependencies and scripts
+└── index.html         # This page</code></pre>
+
+            <h2 class="font-heading-lg">Customization</h2>
+            <p>
+              Modify the design tokens in <code>src/styles/tokens/</code> to customize colors,
+              typography, spacing, and more. Then run <code>npm run build</code> to recompile.
+            </p>
+
+            <h2 class="font-heading-lg">Resources</h2>
+            <ul class="usa-list">
+              <li><a href="https://designsystem.digital.gov/" class="usa-link">USWDS Documentation</a></li>
+              <li><a href="https://github.com/uswds/uswds" class="usa-link">USWDS on GitHub</a></li>
+              <li><a href="https://designsystem.digital.gov/components/" class="usa-link">Component Library</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="usa-footer usa-footer--slim">
+    <div class="usa-footer__primary-section">
+      <div class="grid-container">
+        <div class="usa-footer__primary-container grid-row">
+          <div class="mobile-lg:grid-col-8">
+            <nav class="usa-footer__nav" aria-label="Footer navigation">
+              <ul class="grid-row grid-gap">
+                <li class="mobile-lg:grid-col-auto usa-footer__primary-content">
+                  <a class="usa-footer__primary-link" href="https://github.com/michaelasaro/uswds-starter">GitHub</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="dist/uswds/js/uswds.min.js"></script>
+</body>
+</html>

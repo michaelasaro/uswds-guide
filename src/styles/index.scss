@@ -1,0 +1,16 @@
+// ------------------------------------------------------------------------------------------------------
+// index.scss
+// This is the main SCSS entry point for the FPAC Demonstration application styles.
+// It forwards core USWDS styles, FPAC-specific customizations, and additional style modules.
+// ------------------------------------------------------------------------------------------------------
+
+// Forward the FPAC custom design tokens
+// Forward these before the core USWDS styles so they are available to override default USWDS token values
+@forward "./fpac-uswds-styles.scss";
+
+// Forward the core USWDS styles to be modified by the FPAC design tokens
+@forward "../../node_modules/@uswds/uswds/packages/uswds/index";
+
+
+// Forward additional custom styles for the FPAC-design-system
+@forward "./fpac-custom-styles.scss";

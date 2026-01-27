@@ -1,0 +1,236 @@
+/* -------------------------------------------------------------------------------------------------
+  _    _  _____ _____            ______ _____        _____ 
+ | |  | |/ ____|  __ \   /\     |  ____|  __ \ /\   / ____|
+ | |  | | (___ | |  | | /  \    | |__  | |__) /  \ | |     
+ | |  | |\___ \| |  | |/ /\ \   |  __| |  ___/ /\ \| |     
+ | |__| |____) | |__| / ____ \  | |    | |  / ____ \ |____ 
+  \____/|_____/|_____/_/    \_\ |_|    |_| /_/    \_\_____|
+                                                           
+----------------------------------------------------------------------------------------------------
+COMPONENT SETTINGS
+----------------------------------------------------------------------------------------------------
+Read more about USWDS components:
+https://designsystem.digital.gov/components/overview/
+
+For more information about USWDS design tokens:
+https://designsystem.digital.gov/design-tokens/
+
+----------------------------------------------------------------------------------------------------
+*/
+
+
+
+// Accordion
+    // $theme-accordion-background-color: default,                  // Default: default  |  Description: Background color of the accordion content.
+    // $theme-accordion-border-width: 0.5,                          // Default: 0.5  |  Description: Border width of the bordered accordion.
+    // $theme-accordion-border-color: "base-lighest",               // Default: "base-lightest"  |  Description: Border color of the bordered accordion.
+    // $theme-accordion-button-background-color: "base-lightest",   // Default: "base-lightest"  |  Description: Background color of the accordion button.
+    // $theme-accordion-font-family: "body",                        // Default: "body"  |  Description: Font family of the accordion.
+
+// Alert
+    // $theme-alert-bar-width: 1,                           // Default: 1  |  Description: Width of the colored bar to the left of the alert.
+    // $theme-alert-font-family: "ui",                      // Default: "ui"  |  Description: Font family of the alert.
+    // $theme-alert-icon-size: 4,                           // Default: 4  |  Description: Size of the alert icon.
+    // $theme-alert-padding-x: 2.5,                         // Default: 2.5  |  Description: Padding on the left and right of the alert.
+    // $theme-alert-padding-y: 2,                           // Default: 2  |  Description: Padding on the top and bottom of the alert.
+    // $theme-alert-text-color: default,                    // Default: default  |  Description: Text color on light backgrounds. Default uses text color set in $theme-text-color.
+    // $theme-alert-link-color: default,                    // Default: default  |  Description: Link color on light backgrounds. Default uses text color set in $theme-text-color.
+    // $theme-alert-text-reverse-color: default,            // Default: default  |  Description: Text color on dark backgrounds. Default uses reverse text color set in $theme-text-reverse-color.
+    // $theme-alert-link-reverse-color: default,            // Default: default  |  Description: Link color on dark backgrounds. Default uses reverse link color set in $theme-link-reverse-color.
+
+// Banner
+       $theme-banner-background-color: "primary-light",     // Default: "base-lightest"  |  Description: Background color of the banner and its content.
+    // $theme-banner-font-family: "ui",                     // Default: "ui"  |  Description: The font family of the banner.
+       $theme-banner-link-color: "white",                   // Default: default  |  Description: The color of banner link. Add the link color and the system will generate the hover state. Default uses the default link settings calculated from your background color.
+       $theme-banner-max-width: "widescreen",               // Default: "desktop"  |  Description: Maximum width of the banner content.
+
+// Breadcrumb
+    // $theme-breadcrumb-background-color: default,         // Default: default  |  Description: The background color of the complete breadcrumb bar. Default uses body background color set in $theme-body-background-color.
+    // $theme-breadcrumb-font-family: "body",               // Default: "body"  |  Description: The family of the breadcrumb text.
+    // $theme-breadcrumb-font-size: "sm",                   // Default: "sm"  |  Description: The size of the breadcrumb text.
+    // $theme-breadcrumb-link-color: default,               // Default: default  |  Description: The color of breadcrumb link. Add the link color and the system will generate the hover state. Default uses the default link settings calculated from your background color.
+    // $theme-breadcrumb-min-width: "mobile-lg",            // Default: "mobile-lg"  |  Description: The width at which the breadcrumb displays the full breadcrumb list.
+    // $theme-breadcrumb-padding-bottom: 2,                 // Default: 2  |  Description: Padding below the breadcrumb.
+    // $theme-breadcrumb-padding-top: 2,                    // Default: 2  |  Description: Padding above the breadcrumb.
+    // $theme-breadcrumb-padding-x: 0,                      // Default: 0  |  Description: Padding to the right and left of the breadcrumb.
+    // $theme-breadcrumb-separator-color: "base",           // Default: "base"  |  Description: Color of the breadcrumb separator. This value needs AA contrast against the background.
+
+// Button
+    // $theme-button-border-radius: "md",                   // Default: "md"  |  Description: Button border radius for rounded corners.
+    // $theme-button-font-family: "ui",                     // Default: "ui"  |  Description: Font family of the button.
+    // $theme-button-icon-gap: 1,                           // Default: 1  |  Description: Size of the gap between the button’s text and icon.
+    // $theme-button-small-width: 6,                        // Default: 6  |  Description: Width of small buttons. Used to define the size of the header search button and small language selector button.
+    // $theme-button-stroke-width: 2px,                     // Default: 2px  |  Description: Stroke width of outline button variants.
+
+// Card
+       $theme-card-border-color: "primary-light",           // Default: "base-lighter"  |  Description: Stroke color of card.
+       $theme-card-border-radius: "lg",                     // Default: "lg"  |  Description: Border radius of card.
+       $theme-card-border-width: 2px,                       // Default: 2px  |  Description: Stroke thickness of card.
+    // $theme-card-gap: 2,                                  // Default: 2  |  Description: Gap between cards in a card group.
+    // $theme-card-flag-min-width: "tablet",                // Default: "tablet"  |  Description: Width at which flag cards change to horizontal layout.
+    // $theme-card-flag-image-width: "card-lg",             // Default: "card-lg"  |  Description: Fixed image width in the card flag variant.
+    // $theme-card-font-family: "body",                     // Default: "body"  |  Description: Font family for card body.
+    // $theme-card-header-typeset: ("heading", "lg", 2),    // Default: "heading", "lg", 2  |  Description: Family, size, and line height of the heading.
+    // $theme-card-margin-bottom: 4,                        // Default: 4  |  Description: Bottom margin for card.
+    // $theme-card-padding-perimeter: 3,                    // Default: 3  |  Description: Padding between card elements and card border.
+    // $theme-card-padding-y: 2,                            // Default: 2  |  Description: Vertical padding between card elements.
+
+// Checkbox
+    // $theme-checkbox-border-radius: "sm",                 // Default: "sm"  |  Description: Checkbox border radius for rounded corners.
+
+// Collection
+    // $theme-collection-font-family: "ui",                 // Default: "ui"  |  Description: Font family for collection body.
+    // $theme-collection-header-typeset: ("ui", "md", 3),     // Default: "ui", "md", 3  |  Description: Family, size, and line height of the heading.
+
+// Footer
+    // $theme-footer-font-family: "body",                   // Default: "body"  |  Description: Font family of the footer.
+       $theme-footer-max-width: "widescreen",               // Default: "desktop"  |  Description: Maximum width of footer container.
+
+// Form
+    // $theme-form-font-family: "ui",                       // Default: "ui"  |  Description: Font family of the form.
+
+// Header
+    // $theme-header-font-family: "ui",                     // Default: "ui"        |  Description: Font family of the header.
+       $theme-header-logo-text-width: 38%,                  // Default: 0.33        |  Description: Width of the logo text area at desktop width as a percentage of the total header width.
+       $theme-header-max-width: "widescreen",               // Default: "desktop"   |  Description: Maximum width of the header.
+    // $theme-header-min-width: "desktop",                  // Default: "desktop"   |  Description: Breakpoint at which the non-mobile header is shown.
+    // $theme-subnav-shadow: 2                              // Default: 2           |  Description: Shadow of the subnav (?) (Note: not on the settings page; found it on the design token page).
+    // $theme-subnav-z-index: 'top',                        // Default: 'top'       |  Description: Z-index of the subnav. This is used to ensure the subnav appears above other elements on the page. Not in settings; found on: https://designsystem.digital.gov/design-tokens/z-index/#using-z-index-tokens-2
+
+// Hero
+       $theme-hero-image: "./fpac/images/farmersgov-1440x540-finlitmo-hero.jpg",      // Default: "#{$theme-image-path}/hero.png"  |  Description: Background image for the hero. Use a path relative to the final project CSS.
+
+// Icon list
+    // $theme-icon-list-font-family: "body",                        // Default: "body"  |  Description: Font family of the content text.
+    // $theme-icon-list-title-font-family: "heading",               // Default: "heading"  |  Description: Font family of the content title.
+
+// Identifier
+    // $theme-identifier-background-color: "base-darkest",          // Default: "base-darkest"  |  Description: The background color of the identifier. Use a color of grade 80 or higher, darker than the section that precedes it.
+    // $theme-identifier-font-family: "ui",                         // Default: "ui"  |  Description: The font family of the identifier.
+    // $theme-identifier-identity-domain-color: "base-light",       // Default: "base-light"  |  Description: The color of your domain text in the identifier masthead. This should be grade 20-30 in the same family as the $theme-identifier-background-color.
+       $theme-identifier-max-width: "widescreen",                   // Default: "desktop"  |  Description: The maximum width of the content within the identifier. Use the same max-width as your site footer.
+    // $theme-identifier-primary-link-color: default,               // Default: default  |  Description: The color of the links in the masthead section. Default uses either the standard or reverse link color set with $theme-link-color and $theme-link-reverse-color.
+    // $theme-identifier-secondary-link-color: "base-light",        // Default: "base-light"  |  Description: The color of the links in the required links section. This should be grade 20-30 in a gray family.
+
+// In-page navigation
+    // $theme-in-page-nav-background-color: "default",              // Default: "default"   |  Description: Background color of the in-page navigation block. Default uses body background color set in $theme-body-background-color.
+    // $theme-in-page-nav-background-padding: 2,                    // Default: 2           |  Description: Padding of the in-page navigation block.
+    // $theme-in-page-nav-background-radius: "lg",                  // Default: "lg"        |  Description: The border radius of the in-page navigation block.
+    // $theme-in-page-nav-bar-color: "default",                     // Default: "default"   |  Description: Color of the bar representing the active state of a link in the in-page navigation. Default uses the default link settings calculated from your background color.
+    // $theme-in-page-nav-bar-width: "05",                          // Default: "05"        |  Description: Width of the colored bar representing the active state of a link in the in-page navigation.
+    // $theme-in-page-nav-font-family: "ui",                        // Default: "ui"        |  Description: Font family of the in-page navigation.
+       $theme-in-page-nav-link-color: "primary-dark",               // Default: "default"   |  Description: The color of the link in the in-page navigation. Default uses the default link settings calculated from your background color.
+       $theme-in-page-nav-main-content-max-width: "widescreen",     // Default: "desktop"    |  Description: Maximum width of the main element.
+    // $theme-in-page-nav-margin-left: 4,                           // Default: 4           |  Description: Margin to the left of in-page navigation.
+    // $theme-in-page-nav-margin-top: 2.5,                          // Default: 2.5         |  Description: Margin above in-page navigation.
+    // $theme-in-page-nav-top: 4,                                   // Default: 4           |  Description: Distance from top of page to top of navigation when the sticky position is engaged on scroll.
+
+// Input + Radio buttons
+    // $theme-input-background-color: default,                      // Default: default     |  Description: Background color for radio and checkbox inputs.
+    // $theme-input-line-height: 3,                                 // Default: 3           |  Description: Line-height of input element.
+    // $theme-input-max-width: "mobile-lg",                         // Default: "mobile-lg" |  Description: Max width of the input element.
+    // $theme-input-select-border-width: 2px,                       // Default: 2px         |  Description: Border width of selection element for checkbox, radio, and range.
+    // $theme-input-select-size: 2.5,                               // Default: 2.5         |  Description: Height and width checkboxes and radio buttons.
+    // $theme-input-state-border-width: 0.5,                        // Default: 0.5         |  Description: Border width of special state inputs (like error state).
+    // $theme-input-tile-border-radius: "md",                       // Default: "md"        |  Description: Tile border radius for rounded corners.
+    // $theme-input-tile-border-width: "2px",                       // Default: "2px"       |  Description: Tile border thickness
+
+// Link
+    // $theme-external-link-sr-label-tab-new: "External, opens in a new tab.",      // Default: "External, opens in a new tab."  |  Description: Screen reader label for external links that open in new tabs.
+    // $theme-external-link-sr-label-tab-same: "External.",                         // Default: "External."  |  Description: Screen reader label for external links that open in current tab.
+
+// Modal
+    // $theme-modal-border-radius: "lg",                            // Default: "lg"         |  Description: The border radius of the modal window.
+    // $theme-modal-default-max-width: "mobile-lg",                 // Default: "mobile-lg"  |  Description: Maximum width of default modal window.
+    // $theme-modal-lg-content-max-width: "tablet",                 // Default: "tablet"     |  Description: Maximum width of content area within large modal window.
+    // $theme-modal-lg-max-width: "tablet-lg",                      // Default: "tablet-lg"  |  Description: Maximum width of large modal window.
+
+// Navigation
+    // $theme-navigation-font-family: "ui",                         // Default: "ui"    |  Description: Font family of the navigation.
+    // $theme-megamenu-columns: 3,                                  // Default: 3       |  Description: Number of columns in the megamenu.
+
+// Pagination
+    // $theme-pagination-background-color: "default",               // Default: "default"  |  Description: The background color of the entire pagination component.
+    // $theme-pagination-breakpoint: "tablet",                      // Default: "tablet"  |  Description: Breakpoint at which full pagination displays.
+    // $theme-pagination-button-border-radius: "md",                // Default: "md"  |  Description: Default pagination button border radius.
+    // $theme-pagination-button-border-width: 1px,                  // Default: 1px  |  Description: Width of button border.
+    // $theme-pagination-font-family: "ui",                         // Default: "ui"  |  Description: Default font family for pagination.
+
+// Process list
+    // $theme-process-list-counter-background-color: "white",       // Default: "white"  |  Description: Background color of the counter circle.
+    // $theme-process-list-counter-border-color: "ink",             // Default: "ink"  |  Description: Color of the border around the counter circle.
+    // $theme-process-list-counter-border-width: 0.5,               // Default: 0.5  |  Description: Size of the border around the counter circle.
+    // $theme-process-list-counter-font-family: "ui",               // Default: "ui"  |  Description: Font family of the counter text.
+    // $theme-process-list-counter-font-size: "lg",                 // Default: "lg"  |  Description: Font size of the counter text.
+    // $theme-process-list-counter-gap-color: "white",              // Default: "white"  |  Description: Color of gap between counter and connector. This should the the same as the background color behind the component.
+    // $theme-process-list-counter-gap-width: 0.5,                  // Default: 0.5  |  Description: Size of gap between counter and connector.
+    // $theme-process-list-counter-size: 5,                         // Default: 5  |  Description: Size of the counter circle.
+    // $theme-process-list-counter-text-color: "ink",               // Default: "ink"  |  Description: Color of the number text inside the counter circle.
+    // $theme-process-list-connector-color: "primary-lighter",      // Default: "primary-lighter"  |  Description: Color of the connector line between counter circles.
+    // $theme-process-list-connector-width: 1,                      // Default: 1  |  Description: Width of the connector line between counter circles.
+    // $theme-process-list-font-family: "ui",                       // Default: "ui"  |  Description: Font family of the content text.
+    // $theme-process-list-font-size: "sm",                         // Default: "sm"  |  Description: Font size of the content text.
+    // $theme-process-list-heading-color: "ink",                    // Default: "ink"  |  Description: Color of the heading text.
+    // $theme-process-list-heading-font-family: "ui",               // Default: "ui"  |  Description: Font family of the heading text.
+    // $theme-process-list-heading-font-size: "lg",                 // Default: "lg"  |  Description: Font size of the heading text.
+
+// Search
+    // $theme-search-font-family: "ui",                             // Default: "ui"  |  Description: Font family of the search.
+    // $theme-search-min-width: 27ch,                               // Default: 27ch  |  Description: Min-width of the search input.
+
+// Sidenav
+    // $theme-sidenav-current-border-width: 0.5,                    // Default: 0.5  |  Description: Width of the current section indicator.
+    // $theme-sidenav-font-family: "ui",                            // Default: "ui"  |  Description: Font family of the side navigation.
+    // $theme-sidenav-reorder: FALSE,                               // Default: FALSE  |  Description: Reorder Documentation template sidenav with CSS. Favor code example in Documentation template instead.
+
+// Site Alert
+       $theme-site-alert-max-width: "widescreen",                   // Default: "desktop"  |  Description: Maximum width of the site alert content.
+
+// Step indicator
+    // $step-indicator-background-color: "white",                        // Default: "white"  |  Description: Background color of the component and the gaps around the counters.
+    // $theme-step-indicator-counter-gap: 0.5,                           // Default: 0.5  |  Description: Gap between the counter and the segment.
+    // $theme-step-indicator-counter-border-width: 0.5,                  // Default: 0.5  |  Description: Size of the border around the pending steps.
+    // $theme-step-indicator-font-family: "ui",                          // Default: "ui"  |  Description: Font family of the labels and counter numbers.
+    // $theme-step-indicator-heading-font-family: "ui",                  // Default: "ui"  |  Description: Font family of the heading.
+    // $theme-step-indicator-heading-color: "ink",                       // Default: "ink"  |  Description: Color of the heading.
+    // $theme-step-indicator-heading-font-size: "lg",                    // Default: "lg"  |  Description: Font size of the heading on screens of $theme-step-indicator-min-width and larger.
+    // $theme-step-indicator-heading-font-size-small: "md",              // Default: "md"  |  Description: Font size of the heading on screens smaller than $theme-step-indicator-min-width.
+    // $theme-step-indicator-label-font-size: "sm",                      // Default: "sm"  |  Description: Font size of segment labels.
+    // $theme-step-indicator-min-width: "tablet",                        // Default: "tablet"  |  Description: Width at which the component displays large-width features.
+    // $theme-step-indicator-segment-color-pending: "gray-40",           // Default: "gray-40"  |  Description: Color of pending step segments. Use a grade of 40 more than $step-indicator-background-color.
+    // $theme-step-indicator-segment-color-complete: "primary-darker",   // Default: "primary-darker"  |  Description: Color of complete step segments. Use a grade of at least 60.
+    // $theme-step-indicator-segment-color-current: "primary",           // Default: "primary"  |  Description: Color of the current step segments. Use a grade at least 20 less than $theme-step-indicator-segment-color-complete.
+    // $theme-step-indicator-segment-gap: 2px,                           // Default: 2px  |  Description: Gap between step segments.
+    // $theme-step-indicator-segment-height: 1,                          // Default: 1  |  Description: Height of the step segment. Note that the mobile segment height is always 1 unit.
+    // $theme-step-indicator-text-pending-color: "base-dark",            // Default: "base-dark"  |  Description: The text color of pending steps. Use a gray grade of 60 more than the $step-indicator-background-color.
+
+// Summary box
+    // $theme-summary-box-background-color: "info-lighter",              // Default: "info-lighter"  |  Description: Background color of the Summary box.
+    // $theme-summary-box-border-color: "info-light",                    // Default: "info-light"  |  Description: Color the border around the Summary box.
+    // $theme-summary-box-border-width: 1px,                             // Default: 1px  |  Description: Width of the border around the Summary box.
+    // $theme-summary-box-border-radius: "md",                           // Default: "md"  |  Description: Border radius of the summary box.
+    // $theme-summary-box-font-family: "ui",                             // Default: "ui"  |  Description: Font family of the content text.
+    // $theme-summary-box-link-color: default,                           // Default: default  |  Description: Color of the links inside the content text. When set to “default”, links will get one of three values, based on contrast: $theme-link-color, $theme-link-reverse-color, or “ink”.
+    // $theme-summary-box-text-color: default,                           // Default: default  |  Description: Color of the content text. When set to “default”, text will get one of two values, based on contrast: $theme-text-reverse-color or $theme-text-color.
+
+// Tables
+    // $theme-table-background-color: default,                           // Default: default  |  Description: Defines the table background color. A value of default uses the body background color.
+    // $theme-table-border-color: "ink",                                 // Default: "ink"  |  Description: Defines a border color for table cells. A value of default uses either the default text or reverse text color depending on the site background color.
+       $theme-table-header-background-color: "secondary-lighter",        // Default: "base-lighter"  |  Description: Defines a background color for header cells.
+    // $theme-table-header-text-color: default,                          // Default: default  |  Description: Defines a text color for header cells. A value of default uses either the default text or reverse text color depending on the header background color.
+    // $theme-table-sorted-background-color: "accent-cool-lighter",      // Default: "accent-cool-lighter"  |  Description: Defines a background color for the cells of the sorted column.
+    // $theme-table-sorted-header-background-color: "accent-cool-light", // Default: "accent-cool-light"  |  Description: Defines a background color for the sorted column header.
+    // $theme-table-sorted-icon-color: default,                          // Default: default  |  Description: Defines a fill color for the activated sort button in a sortable column header. A value of default uses either the default text or reverse text color depending on the sorted column header background color.
+    // $theme-table-sorted-stripe-background-color: "blue-cool-10v",     // Default: "blue-cool-10v"  |  Description: Defines a background color for the alternating horizontal stripes applied to cells of the sorted column.
+    // $theme-table-sticky-top-offset: -1px,                             // Default: -1px  |  Description: Defines the top offset for sticky headers. This setting value must include the CSS unit type, for example 10px or 2rem.
+    // $theme-table-stripe-background-color: "base-lightest",            // Default: "base-lightest"  |  Description: Defines a background color for alternating horizontal stripes in the striped table variant.
+    // $theme-table-stripe-text-color: default,                          // Default: default  |  Description: Defines a text color for alternating horizontal stripes in the striped table variant. A value of default uses either the default text or reverse text color depending on the stripe background color.
+    // $theme-table-text-color: default,                                 // Default: default  |  Description: Defines a text color for table cells. A value of default uses either the default text or reverse text color depending on the site background color.
+    // $theme-table-unsorted-icon-color: "base",                         // Default: "base"  |  Description: Defines a fill color for the unactivated sort button in a sortable column header.
+
+// Tooltip
+    // $theme-tooltip-background-color: "ink",                           // Default: "ink"  |  Description: Background color of tooltip.
+    // $theme-tooltip-font-color: "base-lightest",                       // Default: "base-lightest"  |  Description: Text color of tooltip.
+    // $theme-tooltip-font-size: "xs",                                   // Default: "xs"  |  Description: Font size of tooltip.
+
+);

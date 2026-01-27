@@ -1,0 +1,61 @@
+/*
+  _    _  _____ _____            ______ _____        _____ 
+ | |  | |/ ____|  __ \   /\     |  ____|  __ \ /\   / ____|
+ | |  | | (___ | |  | | /  \    | |__  | |__) /  \ | |     
+ | |  | |\___ \| |  | |/ /\ \   |  __| |  ___/ /\ \| |     
+ | |__| |____) | |__| / ____ \  | |    | |  / ____ \ |____ 
+  \____/|_____/|_____/_/    \_\ |_|    |_| /_/    \_\_____|
+
+------------------------------------------------------------------------------------------------------
+fpac-custom-styles.scss
+These are custom styles for the FPAC design system.
+These are styles that do not have design tokens available.
+------------------------------------------------------------------------------------------------------
+*/
+
+// Changes the color of the nav menu item link text
+.usa-nav__primary > .usa-nav__primary-item > a {
+  color: #2F2C2A;
+}
+
+// Changes the color of the nav sub-menu item link text (I think)
+.usa-nav__primary button {
+  color: #2F2C2A;
+}
+
+// Changes the color of the hero section title
+.usa-hero__heading {
+  color: #B2C9B7;
+}
+
+/* enforce proportional numerals */
+.text-proportional {
+  font-variant-numeric: proportional-nums;
+  font-feature-settings: "pnum" 1, "tnum" 0;
+  -webkit-font-feature-settings: "pnum" 1, "tnum" 0;
+}
+
+/* enforce proportional numerals */
+.text-no-tabular {
+  font-variant-numeric: proportional-nums;
+  font-feature-settings: "pnum" 1, "tnum" 0;
+  -webkit-font-feature-settings: "pnum" 1, "tnum" 0;
+}
+
+/* enforce tabular numerals */
+.text-tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1, "pnum" 0;
+  -webkit-font-feature-settings: "tnum" 1, "pnum" 0;
+}
+
+
+
+/* 
+The sidenav inherits what your standard link coloring is set to.
+There is no way to change the color of the current page link in the sidenav using the design tokens.
+So, if you want your sidenav current page link to be a different color, 
+you have to change the color of links everywhere.
+Which is what I did via the design tokens.
+*/
+
