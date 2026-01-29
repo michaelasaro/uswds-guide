@@ -1,0 +1,462 @@
+// =================================================================================================
+//
+//  ████████╗██╗   ██╗██████╗  ██████╗  ██████╗ ██████╗  █████╗ ██████╗ ██╗  ██╗██╗   ██╗
+//  ╚══██╔══╝╚██╗ ██╔╝██╔══██╗██╔═══██╗██╔════╝ ██╔══██╗██╔══██╗██╔══██╗██║  ██║╚██╗ ██╔╝
+//     ██║    ╚████╔╝ ██████╔╝██║   ██║██║  ███╗██████╔╝███████║██████╔╝███████║ ╚████╔╝
+//     ██║     ╚██╔╝  ██╔═══╝ ██║   ██║██║   ██║██╔══██╗██╔══██║██╔═══╝ ██╔══██║  ╚██╔╝
+//     ██║      ██║   ██║     ╚██████╔╝╚██████╔╝██║  ██║██║  ██║██║     ██║  ██║   ██║
+//     ╚═╝      ╚═╝   ╚═╝      ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═╝   ╚═╝
+//
+//  TYPOGRAPHY SETTINGS
+//  Configure fonts, sizes, weights, and text styling.
+//
+//  📖 Learn more: https://designsystem.digital.gov/design-tokens/typesetting/overview/
+//
+// =================================================================================================
+//
+//  ✏️  HOW TO CUSTOMIZE:
+//      1. Find the setting you want to change below
+//      2. Uncomment it (remove the //) and set your value
+//      3. Uncomment the matching line in _bridge.scss
+//
+//      That's it! Both files have all settings pre-written - just uncomment to activate.
+//
+// =================================================================================================
+
+
+// -------------------------------------------------------------------------------------------------
+// 📏 ROOT FONT SIZE
+// -------------------------------------------------------------------------------------------------
+// Base font size settings for the document.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-respect-user-font-size: true;
+    // Default: true
+    // When true, root font size is 100% and media queries use ems
+    // When false, uses the px value in $theme-root-font-size
+
+// $theme-root-font-size: 10px;
+    // Default: 10px
+    // Only used when $theme-respect-user-font-size is false
+
+
+// -------------------------------------------------------------------------------------------------
+// 🌐 GLOBAL STYLES
+// -------------------------------------------------------------------------------------------------
+// Add basic styling for unclassed elements.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-global-paragraph-styles: false;
+    // Default: false
+    // Adds styling for paragraph text (p elements)
+
+// $theme-global-link-styles: false;
+    // Default: false
+    // Adds styling for links (a elements)
+
+// $theme-global-content-styles: false;
+    // Default: false
+    // Adds styling for paragraphs, links, headings, lists, and tables
+
+
+// -------------------------------------------------------------------------------------------------
+// 🌐 BROWSER COMPATIBILITY
+// -------------------------------------------------------------------------------------------------
+// Font format support for older browsers.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-font-browser-compatibility: false;
+    // Default: false
+    // When true, outputs woff and ttf formats in addition to woff2 (for IE11)
+
+
+// -------------------------------------------------------------------------------------------------
+// 📁 FONT PATH
+// -------------------------------------------------------------------------------------------------
+// Path to your font files.
+// -------------------------------------------------------------------------------------------------
+
+$theme-font-path: "/dist/uswds/fonts";
+    // Default: "../fonts"
+    // Set the path relative to your compiled CSS file
+
+
+// -------------------------------------------------------------------------------------------------
+// 🔤 TYPEFACE TOKENS (CUSTOM)
+// -------------------------------------------------------------------------------------------------
+// Add custom typeface tokens for fonts not included in USWDS.
+// -------------------------------------------------------------------------------------------------
+//
+// USWDS includes these typeface tokens by default:
+// - 'georgia'
+// - 'helvetica'
+// - 'merriweather'
+// - 'open-sans'
+// - 'public-sans'
+// - 'roboto-mono'
+// - 'source-sans-pro'
+// - 'system'
+// - 'tahoma'
+// - 'verdana'
+//
+// -------------------------------------------------------------------------------------------------
+
+// $theme-typeface-tokens: ();
+    // Default: () (empty map)
+    // Example:
+    // $theme-typeface-tokens: (
+    //   example-serif-token: (
+    //     display-name: "Example Serif Display Name",
+    //     cap-height: 364px,
+    //   ),
+    // );
+
+
+// -------------------------------------------------------------------------------------------------
+// 🔤 TYPE-BASED FONT SETTINGS
+// -------------------------------------------------------------------------------------------------
+// Set which fonts to use for each type category.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-font-type-sans: "source-sans-pro";
+    // Default: "source-sans-pro"
+    // Project sans-serif font. Set to false if unused.
+
+// $theme-font-type-serif: "merriweather";
+    // Default: "merriweather"
+    // Project serif font. Set to false if unused.
+
+// $theme-font-type-mono: "roboto-mono";
+    // Default: "roboto-mono"
+    // Project monospaced font. Set to false if unused.
+
+// $theme-font-type-cond: false;
+    // Default: false
+    // Project condensed font. Set to false if unused.
+
+// $theme-font-type-icon: false;
+    // Default: false
+    // Project icon font. Set to false if unused.
+
+// $theme-font-type-lang: false;
+    // Default: false
+    // Project language-specific font. Set to false if unused.
+
+
+// -------------------------------------------------------------------------------------------------
+// 🔤 CUSTOM FONT STACKS
+// -------------------------------------------------------------------------------------------------
+// Add fallback fonts to your font stacks.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-font-cond-custom-stack: false;
+    // Default: false
+
+// $theme-font-icon-custom-stack: false;
+    // Default: false
+
+// $theme-font-lang-custom-stack: false;
+    // Default: false
+
+// $theme-font-mono-custom-stack: false;
+    // Default: false
+
+// $theme-font-sans-custom-stack: false;
+    // Default: false
+
+// $theme-font-serif-custom-stack: false;
+    // Default: false
+
+
+// -------------------------------------------------------------------------------------------------
+// 🔤 CUSTOM FONT SOURCE FILES
+// -------------------------------------------------------------------------------------------------
+// Add custom @font-face declarations.
+// -------------------------------------------------------------------------------------------------
+//
+// USWDS automatically generates @font-face for:
+// - 'merriweather'
+// - 'public-sans'
+// - 'roboto-mono'
+// - 'source-sans-pro'
+//
+// -------------------------------------------------------------------------------------------------
+
+// $theme-font-cond-custom-src: false;
+    // Default: false
+
+// $theme-font-icon-custom-src: false;
+    // Default: false
+
+// $theme-font-lang-custom-src: false;
+    // Default: false
+
+// $theme-font-mono-custom-src: false;
+    // Default: false
+
+// $theme-font-sans-custom-src: false;
+    // Default: false
+
+// $theme-font-serif-custom-src: false;
+    // Default: false
+
+
+// -------------------------------------------------------------------------------------------------
+// 🎭 ROLE-BASED FONT SETTINGS
+// -------------------------------------------------------------------------------------------------
+// Assign font families to semantic roles.
+// -------------------------------------------------------------------------------------------------
+//
+// AVAILABLE ROLES:
+// - 'cond'   (condensed)
+// - 'icon'   (icons)
+// - 'lang'   (language-specific)
+// - 'mono'   (monospace)
+// - 'sans'   (sans-serif)
+// - 'serif'  (serif)
+//
+// -------------------------------------------------------------------------------------------------
+
+// $theme-font-role-ui: "sans";
+    // Default: "sans"
+    // Font for interfaces and buttons
+
+// $theme-font-role-heading: "serif";
+    // Default: "serif"
+    // Font for headings
+
+// $theme-font-role-body: "sans";
+    // Default: "sans"
+    // Font for body text
+
+// $theme-font-role-code: "mono";
+    // Default: "mono"
+    // Font for code
+
+// $theme-font-role-alt: "serif";
+    // Default: "serif"
+    // Font for alternative type sections
+
+
+// -------------------------------------------------------------------------------------------------
+// 📊 TYPE SCALE
+// -------------------------------------------------------------------------------------------------
+// Define your project's type scale.
+// -------------------------------------------------------------------------------------------------
+//
+// SCALE REFERENCE (in px):
+// micro: 10px    1: 12px     2: 13px     3: 14px     4: 15px
+// 5: 16px        6: 17px     7: 18px     8: 20px     9: 22px
+// 10: 24px       11: 28px    12: 32px    13: 36px    14: 40px
+// 15: 48px       16: 56px    17: 64px    18: 80px    19: 120px
+// 20: 140px
+//
+// -------------------------------------------------------------------------------------------------
+
+// $theme-type-scale-3xs: 2;
+    // Default: 2 (13px)
+
+// $theme-type-scale-2xs: 3;
+    // Default: 3 (14px)
+
+// $theme-type-scale-xs: 4;
+    // Default: 4 (15px)
+
+// $theme-type-scale-sm: 5;
+    // Default: 5 (16px)
+
+// $theme-type-scale-md: 6;
+    // Default: 6 (17px)
+
+// $theme-type-scale-lg: 9;
+    // Default: 9 (22px)
+
+// $theme-type-scale-xl: 12;
+    // Default: 12 (32px)
+
+// $theme-type-scale-2xl: 14;
+    // Default: 14 (40px)
+
+// $theme-type-scale-3xl: 15;
+    // Default: 15 (48px)
+
+
+// -------------------------------------------------------------------------------------------------
+// ⚖️ FONT WEIGHTS
+// -------------------------------------------------------------------------------------------------
+// Define available font weights.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-font-weight-thin: false;
+    // Default: false
+    // Weight 100
+
+$theme-font-weight-light: 300;
+    // Default: 300
+    // Weight 300
+
+$theme-font-weight-normal: 400;
+    // Default: 400
+    // Weight 400
+
+// $theme-font-weight-medium: false;
+    // Default: false
+    // Weight 500
+
+$theme-font-weight-semibold: 600;
+    // Default: false
+    // Weight 600
+
+$theme-font-weight-bold: 700;
+    // Default: 700
+    // Weight 700
+
+// $theme-font-weight-heavy: false;
+    // Default: false
+    // Weight 800-900
+
+$theme-generate-all-weights: true;
+    // Default: false
+    // Generate all available weights in @font-face rules
+
+
+// -------------------------------------------------------------------------------------------------
+// 📝 BODY TYPOGRAPHY
+// -------------------------------------------------------------------------------------------------
+// Default typography settings for the body element.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-body-font-family: "body";
+    // Default: "body"
+    // Use theme role tokens
+
+// $theme-body-font-size: "sm";
+    // Default: "sm"
+    // Use theme size tokens
+
+// $theme-body-line-height: 5;
+    // Default: 5 (1.62)
+    // Use line height tokens 1-6
+
+// $theme-style-body-element: false;
+    // Default: false
+    // When true, explicitly style the <body> element
+
+
+// -------------------------------------------------------------------------------------------------
+// 📰 HEADING TYPOGRAPHY
+// -------------------------------------------------------------------------------------------------
+// Default sizes for heading elements.
+// -------------------------------------------------------------------------------------------------
+//
+// LINE HEIGHT REFERENCE:
+// 1: 1       2: 1.15    3: 1.35    4: 1.5    5: 1.62    6: 1.75
+//
+// -------------------------------------------------------------------------------------------------
+
+// $theme-h1-font-size: "2xl";
+    // Default: "2xl" (40px)
+
+// $theme-h2-font-size: "xl";
+    // Default: "xl" (32px)
+
+// $theme-h3-font-size: "lg";
+    // Default: "lg" (22px)
+
+// $theme-h4-font-size: "sm";
+    // Default: "sm" (16px)
+
+// $theme-h5-font-size: "xs";
+    // Default: "xs" (15px)
+
+// $theme-h6-font-size: "3xs";
+    // Default: "3xs" (13px)
+
+// $theme-heading-line-height: 2;
+    // Default: 2 (1.15)
+
+
+// -------------------------------------------------------------------------------------------------
+// 📝 ADDITIONAL TEXT SIZES
+// -------------------------------------------------------------------------------------------------
+
+// $theme-small-font-size: "2xs";
+    // Default: "2xs" (13px)
+    // Used for the smallest text on a site
+
+// $theme-display-font-size: "3xl";
+    // Default: "3xl" (48px)
+    // Used for the largest text on a site
+
+
+// -------------------------------------------------------------------------------------------------
+// 📏 TEXT MEASURE (LINE LENGTH)
+// -------------------------------------------------------------------------------------------------
+// Control the maximum width of text for readability.
+// -------------------------------------------------------------------------------------------------
+//
+// MEASURE REFERENCE:
+// 1: 44ex    2: 60ex    3: 64ex    4: 68ex    5: 74ex    6: 88ex    none: none
+//
+// -------------------------------------------------------------------------------------------------
+
+// $theme-text-measure-narrow: 1;
+    // Default: 1 (44ex)
+    // Narrow line length
+
+$theme-text-measure: 6;
+    // Default: 4 (68ex)
+    // Standard line length
+
+// $theme-text-measure-wide: 6;
+    // Default: 6 (88ex)
+    // Wide line length
+
+
+// -------------------------------------------------------------------------------------------------
+// 📖 PROSE TYPOGRAPHY
+// -------------------------------------------------------------------------------------------------
+// Settings for .usa-prose content blocks.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-prose-font-family: "body";
+    // Default: "body"
+    // Font family used for body text in usa-prose
+
+
+// -------------------------------------------------------------------------------------------------
+// 📣 LEAD (INTRO) TYPOGRAPHY
+// -------------------------------------------------------------------------------------------------
+// Settings for introductory text.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-lead-font-family: "heading";
+    // Default: "heading"
+    // Font family of lead (intro) text
+
+// $theme-lead-font-size: "lg";
+    // Default: "lg"
+    // Font size of intro text
+
+// $theme-lead-line-height: 6;
+    // Default: 6 (1.75)
+    // Line height of intro text
+
+// $theme-lead-measure: 6;
+    // Default: 6 (88ex)
+    // Line length of intro text
+
+
+// -------------------------------------------------------------------------------------------------
+// 📐 TYPOGRAPHY MARGINS
+// -------------------------------------------------------------------------------------------------
+// Vertical spacing for text elements in usa-prose.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-heading-margin-top: 1.5em;
+    // Default: 1.5em
+    // Top margin for headings in usa-prose
+
+// $theme-paragraph-margin-top: 1em;
+    // Default: 1em
+    // Top margin for paragraphs in usa-prose

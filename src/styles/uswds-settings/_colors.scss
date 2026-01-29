@@ -1,0 +1,444 @@
+// =================================================================================================
+//
+//   ██████╗ ██████╗ ██╗      ██████╗ ██████╗ ███████╗
+//  ██╔════╝██╔═══██╗██║     ██╔═══██╗██╔══██╗██╔════╝
+//  ██║     ██║   ██║██║     ██║   ██║██████╔╝███████╗
+//  ██║     ██║   ██║██║     ██║   ██║██╔══██╗╚════██║
+//  ╚██████╗╚██████╔╝███████╗╚██████╔╝██║  ██║███████║
+//   ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+//
+//  COLOR SETTINGS
+//  Define your brand colors here! These colors will be used throughout your site.
+//
+//  📖 Learn more: https://designsystem.digital.gov/design-tokens/color/
+//  🎨 Color picker: https://designsystem.digital.gov/design-tokens/color/system-tokens/
+//
+// =================================================================================================
+//
+//  ✏️  HOW TO CUSTOMIZE:
+//      1. Find the setting you want to change below
+//      2. Uncomment it (remove the //) and set your value
+//      3. Uncomment the matching line in _bridge.scss
+//
+//      That's it! Both files have all settings pre-written - just uncomment to activate.
+//
+// =================================================================================================
+//
+//  HOW COLORS WORK IN USWDS:
+//  -------------------------
+//  USWDS uses a "token" system. You can use:
+//
+//  1. HEX COLORS: #4D8157 (any color you want)
+//  2. USWDS TOKENS: "blue-60v" (from the USWDS color system)
+//
+//  Each color has GRADES (lightness levels):
+//    - Lighter grades (5, 10, 20, 30) = lighter colors
+//    - Middle grades (40, 50, 60) = medium colors
+//    - Darker grades (70, 80, 90) = darker colors
+//    - "v" suffix = vivid/brighter version (e.g., "blue-60v")
+//
+// =================================================================================================
+
+
+// -------------------------------------------------------------------------------------------------
+// 🎨 PRIMARY COLORS
+// -------------------------------------------------------------------------------------------------
+// Your main brand color. Used for buttons, links, and key UI elements.
+// FPAC uses a green palette.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-color-primary-family: "green";
+    // Default: "blue"
+    // Use a color family from the USWDS core palette
+
+// $theme-color-primary-lightest: false;
+    // Default: false
+    // Use grades 0-10. Set to false if not used.
+
+$theme-color-primary-lighter: #DEE8E0;
+    // Default: "blue-10"
+    // A very light tint of your primary color
+
+$theme-color-primary-light: #B2C9B7;
+    // Default: "blue-30"
+    // A light shade for backgrounds and hover states
+
+$theme-color-primary: #4D8157;
+    // Default: "blue-60v"
+    // ⭐ YOUR MAIN BRAND COLOR - used for buttons, links, etc.
+
+// $theme-color-primary-vivid: false;
+    // Default: "blue-warm-60v"
+    // A vivid version of the primary color
+
+$theme-color-primary-dark: #236430;
+    // Default: "blue-warm-70v"
+    // Darker shade for hover states and emphasis
+
+$theme-color-primary-darker: #1A4B24;
+    // Default: "blue-warm-80v"
+    // Darkest shade for text on light backgrounds
+
+// $theme-color-primary-darkest: false;
+    // Default: false
+    // Use grades 70-90. Set to false if not used.
+
+
+// -------------------------------------------------------------------------------------------------
+// 🎨 SECONDARY COLORS
+// -------------------------------------------------------------------------------------------------
+// Your secondary brand color. Used for accents and secondary actions.
+// FPAC uses a blue palette.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-color-secondary-family: "blue";
+    // Default: "red"
+    // Use a color family from the USWDS core palette
+
+// $theme-color-secondary-lightest: false;
+    // Default: false
+    // Use grades 0-10. Set to false if not used.
+
+$theme-color-secondary-lighter: #DEE5EF;
+    // Default: "red-cool-10"
+    // A very light tint of your secondary color
+
+$theme-color-secondary-light: #BCCCDF;
+    // Default: "red-30"
+    // A light shade for backgrounds
+
+$theme-color-secondary: #4F78AA;
+    // Default: "red-50"
+    // ⭐ YOUR SECONDARY COLOR
+
+// $theme-color-secondary-vivid: false;
+    // Default: "red-cool-50v"
+    // A vivid version of the secondary color
+
+$theme-color-secondary-dark: #205493;
+    // Default: "red-60v"
+    // Darker shade for emphasis
+
+$theme-color-secondary-darker: #183F6E;
+    // Default: "red-70v"
+    // Darkest shade
+
+// $theme-color-secondary-darkest: false;
+    // Default: false
+    // Use grades 70-90. Set to false if not used.
+
+
+// -------------------------------------------------------------------------------------------------
+// 🎨 ACCENT WARM COLORS
+// -------------------------------------------------------------------------------------------------
+// Warm accent color for highlights and callouts.
+// FPAC uses an earthy tan/terracotta palette.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-color-accent-warm-family: "terracotta";
+    // Default: "orange"
+    // Use a color family from the USWDS core palette
+
+// $theme-color-accent-warm-lightest: false;
+    // Default: false
+    // Use grades 0-10. Set to false if not used.
+
+$theme-color-accent-warm-lighter: #F5ECE1;
+    // Default: "orange-10"
+    // Very light warm accent
+
+$theme-color-accent-warm-light: #E8D3B3;
+    // Default: "orange-20v"
+    // Light warm accent
+
+$theme-color-accent-warm: #C97B3E;
+    // Default: "orange-30v"
+    // ⭐ YOUR WARM ACCENT COLOR
+
+$theme-color-accent-warm-dark: #9B5028;
+    // Default: "orange-50v"
+    // Dark warm accent
+
+$theme-color-accent-warm-darker: #6A2F18;
+    // Default: "orange-60"
+    // Darkest warm accent
+
+// $theme-color-accent-warm-darkest: false;
+    // Default: false
+    // Use grades 70-90. Set to false if not used.
+
+
+// -------------------------------------------------------------------------------------------------
+// 🎨 ACCENT COOL COLORS
+// -------------------------------------------------------------------------------------------------
+// Cool accent color for additional visual interest.
+// FPAC uses a teal palette.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-color-accent-cool-family: "pond";
+    // Default: "blue-cool"
+    // Use a color family from the USWDS core palette
+
+// $theme-color-accent-cool-lightest: false;
+    // Default: false
+    // Use grades 0-20. Set to false if not used.
+
+$theme-color-accent-cool-lighter: #DFF9F4;
+    // Default: "blue-cool-5v"
+    // Very light cool accent
+
+$theme-color-accent-cool-light: #A7EDE4;
+    // Default: "blue-cool-20v"
+    // Light cool accent
+
+$theme-color-accent-cool: #3FA39A;
+    // Default: "cyan-30v"
+    // ⭐ YOUR COOL ACCENT COLOR
+
+$theme-color-accent-cool-dark: #2A7A6F;
+    // Default: "blue-cool-40v"
+    // Dark cool accent
+
+$theme-color-accent-cool-darker: #154D41;
+    // Default: "blue-cool-60v"
+    // Darkest cool accent
+
+// $theme-color-accent-cool-darkest: false;
+    // Default: false
+    // Use grades 70-100. Set to false if not used.
+
+
+// -------------------------------------------------------------------------------------------------
+// 🎨 BASE (GRAY) COLORS
+// -------------------------------------------------------------------------------------------------
+// Base colors for text, backgrounds, and borders.
+// These are the neutral grays used throughout the interface.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-color-base-family: "gray-cool";
+    // Default: "gray-cool"
+    // Use a color family from the USWDS core palette
+
+// $theme-color-base-lightest: "gray-5";
+    // Default: "gray-5"
+    // Lightest gray - used for subtle backgrounds
+
+// $theme-color-base-lighter: "gray-cool-10";
+    // Default: "gray-cool-10"
+    // Lighter gray
+
+// $theme-color-base-light: "gray-cool-30";
+    // Default: "gray-cool-30"
+    // Light gray
+
+// $theme-color-base: "gray-cool-50";
+    // Default: "gray-cool-50"
+    // Base gray
+
+// $theme-color-base-dark: "gray-cool-60";
+    // Default: "gray-cool-60"
+    // Dark gray
+
+// $theme-color-base-darker: "gray-cool-70";
+    // Default: "gray-cool-70"
+    // Darker gray
+
+// $theme-color-base-darkest: "gray-90";
+    // Default: "gray-90"
+    // Darkest gray - used for headings
+
+// $theme-color-base-ink: "gray-90";
+    // Default: "gray-90"
+    // Ink color - recommend same as base-darkest
+
+
+// -------------------------------------------------------------------------------------------------
+// ⚠️ STATE COLORS - Error
+// -------------------------------------------------------------------------------------------------
+// Used for error messages, validation errors, and destructive actions.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-color-error-family: "red-warm";
+    // Default: "red-warm"
+
+// $theme-color-error-lighter: "red-warm-10";
+    // Default: "red-warm-10"
+
+// $theme-color-error-light: "red-warm-30v";
+    // Default: "red-warm-30v"
+
+// $theme-color-error: "red-warm-50v";
+    // Default: "red-warm-50v"
+
+// $theme-color-error-dark: "red-60v";
+    // Default: "red-60v"
+
+// $theme-color-error-darker: "red-70";
+    // Default: "red-70"
+
+
+// -------------------------------------------------------------------------------------------------
+// ⚠️ STATE COLORS - Warning
+// -------------------------------------------------------------------------------------------------
+// Used for warning messages and caution states.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-color-warning-family: "gold";
+    // Default: "gold"
+
+// $theme-color-warning-lighter: "yellow-5";
+    // Default: "yellow-5"
+
+// $theme-color-warning-light: "yellow-10v";
+    // Default: "yellow-10v"
+
+// $theme-color-warning: "gold-20v";
+    // Default: "gold-20v"
+
+// $theme-color-warning-dark: "gold-30v";
+    // Default: "gold-30v"
+
+// $theme-color-warning-darker: "gold-50v";
+    // Default: "gold-50v"
+
+
+// -------------------------------------------------------------------------------------------------
+// ✅ STATE COLORS - Success
+// -------------------------------------------------------------------------------------------------
+// Used for success messages and positive states.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-color-success-family: "green-cool";
+    // Default: "green-cool"
+
+// $theme-color-success-lighter: "green-cool-5";
+    // Default: "green-cool-5"
+
+// $theme-color-success-light: "green-cool-20v";
+    // Default: "green-cool-20v"
+
+// $theme-color-success: "green-cool-40v";
+    // Default: "green-cool-40v"
+
+// $theme-color-success-dark: "green-cool-50v";
+    // Default: "green-cool-50v"
+
+// $theme-color-success-darker: "green-cool-60v";
+    // Default: "green-cool-60v"
+
+
+// -------------------------------------------------------------------------------------------------
+// ℹ️ STATE COLORS - Info
+// -------------------------------------------------------------------------------------------------
+// Used for informational messages and neutral states.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-color-info-family: "cyan";
+    // Default: "cyan"
+
+// $theme-color-info-lighter: "cyan-5";
+    // Default: "cyan-5"
+
+// $theme-color-info-light: "cyan-20";
+    // Default: "cyan-20"
+
+// $theme-color-info: "cyan-30v";
+    // Default: "cyan-30v"
+
+// $theme-color-info-dark: "cyan-40v";
+    // Default: "cyan-40v"
+
+// $theme-color-info-darker: "blue-cool-60";
+    // Default: "blue-cool-60"
+
+
+// -------------------------------------------------------------------------------------------------
+// 🚫 STATE COLORS - Disabled
+// -------------------------------------------------------------------------------------------------
+// Used for disabled elements.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-color-disabled-family: "gray";
+    // Default: "gray"
+
+// $theme-color-disabled-lighter: "gray-20";
+    // Default: "gray-20"
+
+// $theme-color-disabled-light: "gray-40";
+    // Default: "gray-40"
+
+// $theme-color-disabled: "gray-50";
+    // Default: "gray-50"
+
+// $theme-color-disabled-dark: "gray-70";
+    // Default: "gray-70"
+
+// $theme-color-disabled-darker: "gray-90";
+    // Default: "gray-90"
+
+
+// -------------------------------------------------------------------------------------------------
+// 🚨 STATE COLORS - Emergency
+// -------------------------------------------------------------------------------------------------
+// Used for emergency alerts and critical states.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-color-emergency: "red-warm-60v";
+    // Default: "red-warm-60v"
+
+// $theme-color-emergency-dark: "red-warm-80";
+    // Default: "red-warm-80"
+
+
+// -------------------------------------------------------------------------------------------------
+// 📄 BODY COLORS
+// -------------------------------------------------------------------------------------------------
+// Background and text colors for the page body.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-body-background-color: "white";
+    // Default: "white"
+    // Background color of the site body
+
+// $theme-text-color: "ink";
+    // Default: "ink"
+    // Color of body text
+
+// $theme-text-reverse-color: "white";
+    // Default: "white"
+    // Color of text on dark backgrounds
+
+
+// -------------------------------------------------------------------------------------------------
+// 🔗 LINK COLORS
+// -------------------------------------------------------------------------------------------------
+// Colors for links and their states.
+// -------------------------------------------------------------------------------------------------
+
+$theme-link-color: "primary";
+    // Default: "primary"
+    // Link default color
+
+$theme-link-visited-color: "primary-darker";
+    // Default: "violet-70v"
+    // Link visited color
+
+$theme-link-hover-color: "primary-dark";
+    // Default: "primary-dark"
+    // Link hover color
+
+$theme-link-active-color: "primary-darker";
+    // Default: "primary-darker"
+    // Link active color
+
+// $theme-link-reverse-color: "base-lighter";
+    // Default: "base-lighter"
+    // Link color on dark backgrounds
+
+// $theme-link-reverse-hover-color: "base-lightest";
+    // Default: "base-lightest"
+    // Link hover color on dark backgrounds
+
+// $theme-link-reverse-active-color: "white";
+    // Default: "white"
+    // Link active color on dark backgrounds

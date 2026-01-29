@@ -1,0 +1,736 @@
+// =================================================================================================
+//
+//  ██████╗ ██████╗ ██╗██████╗  ██████╗ ███████╗
+//  ██╔══██╗██╔══██╗██║██╔══██╗██╔════╝ ██╔════╝
+//  ██████╔╝██████╔╝██║██║  ██║██║  ███╗█████╗
+//  ██╔══██╗██╔══██╗██║██║  ██║██║   ██║██╔══╝
+//  ██████╔╝██║  ██║██║██████╔╝╚██████╔╝███████╗
+//  ╚═════╝ ╚═╝  ╚═╝╚═╝╚═════╝  ╚═════╝ ╚══════╝
+//
+//  THE BRIDGE FILE
+//  This file connects your settings from the partials to USWDS core.
+//
+// =================================================================================================
+//
+//  ✏️  HOW TO ACTIVATE A SETTING:
+//      1. Uncomment the setting in the partial file (e.g., _colors.scss)
+//      2. Uncomment the matching line below
+//
+//      That's it! Both files have all settings pre-written - just uncomment to activate.
+//
+//      EXAMPLE:
+//      --------
+//      To customize the error color:
+//        1. In _colors.scss, uncomment: $theme-color-error: "red-warm-50v";
+//        2. Below, uncomment: $theme-color-error: colors.$theme-color-error,
+//
+// =================================================================================================
+
+
+// -------------------------------------------------------------------------------------------------
+// STEP 1: IMPORT ALL SETTINGS PARTIALS
+// -------------------------------------------------------------------------------------------------
+
+@use "uswds-settings/colors" as colors;
+@use "uswds-settings/general" as general;
+@use "uswds-settings/spacing" as spacing;
+@use "uswds-settings/typography" as typography;
+@use "uswds-settings/components" as components;
+@use "uswds-settings/utilities" as utilities;
+
+
+// -------------------------------------------------------------------------------------------------
+// STEP 2: PASS SETTINGS TO USWDS CORE
+// -------------------------------------------------------------------------------------------------
+// Active settings are uncommented. Inactive settings are commented out.
+// To activate a setting, uncomment it here AND in the corresponding partial file.
+// -------------------------------------------------------------------------------------------------
+
+@use "uswds-core" with (
+
+  // ===============================================================================================
+  // GENERAL SETTINGS (from _general.scss)
+  // ===============================================================================================
+
+  // Image path
+  $theme-image-path: general.$theme-image-path,
+
+  // Compile warnings & notifications
+  $theme-show-compile-warnings: general.$theme-show-compile-warnings,
+  $theme-show-notifications: general.$theme-show-notifications,
+
+  // Namespace
+  // $theme-namespace: general.$theme-namespace,
+
+  // Prefix separator
+  // $theme-prefix-separator: general.$theme-prefix-separator,
+
+  // Layout grid
+  // $theme-layout-grid-use-important: general.$theme-layout-grid-use-important,
+
+  // Border box sizing
+  // $theme-global-border-box-sizing: general.$theme-global-border-box-sizing,
+
+  // Focus styles
+  $theme-focus-color: general.$theme-focus-color,
+  // $theme-focus-offset: general.$theme-focus-offset,
+  // $theme-focus-style: general.$theme-focus-style,
+  // $theme-focus-width: general.$theme-focus-width,
+
+  // Icons
+  // $theme-icon-image-size: general.$theme-icon-image-size,
+
+
+  // ===============================================================================================
+  // COLOR SETTINGS (from _colors.scss)
+  // ===============================================================================================
+
+  // Primary colors
+  // $theme-color-primary-family: colors.$theme-color-primary-family,
+  // $theme-color-primary-lightest: colors.$theme-color-primary-lightest,
+  $theme-color-primary-lighter: colors.$theme-color-primary-lighter,
+  $theme-color-primary-light: colors.$theme-color-primary-light,
+  $theme-color-primary: colors.$theme-color-primary,
+  // $theme-color-primary-vivid: colors.$theme-color-primary-vivid,
+  $theme-color-primary-dark: colors.$theme-color-primary-dark,
+  $theme-color-primary-darker: colors.$theme-color-primary-darker,
+  // $theme-color-primary-darkest: colors.$theme-color-primary-darkest,
+
+  // Secondary colors
+  // $theme-color-secondary-family: colors.$theme-color-secondary-family,
+  // $theme-color-secondary-lightest: colors.$theme-color-secondary-lightest,
+  $theme-color-secondary-lighter: colors.$theme-color-secondary-lighter,
+  $theme-color-secondary-light: colors.$theme-color-secondary-light,
+  $theme-color-secondary: colors.$theme-color-secondary,
+  // $theme-color-secondary-vivid: colors.$theme-color-secondary-vivid,
+  $theme-color-secondary-dark: colors.$theme-color-secondary-dark,
+  $theme-color-secondary-darker: colors.$theme-color-secondary-darker,
+  // $theme-color-secondary-darkest: colors.$theme-color-secondary-darkest,
+
+  // Accent warm colors
+  // $theme-color-accent-warm-family: colors.$theme-color-accent-warm-family,
+  // $theme-color-accent-warm-lightest: colors.$theme-color-accent-warm-lightest,
+  $theme-color-accent-warm-lighter: colors.$theme-color-accent-warm-lighter,
+  $theme-color-accent-warm-light: colors.$theme-color-accent-warm-light,
+  $theme-color-accent-warm: colors.$theme-color-accent-warm,
+  $theme-color-accent-warm-dark: colors.$theme-color-accent-warm-dark,
+  $theme-color-accent-warm-darker: colors.$theme-color-accent-warm-darker,
+  // $theme-color-accent-warm-darkest: colors.$theme-color-accent-warm-darkest,
+
+  // Accent cool colors
+  // $theme-color-accent-cool-family: colors.$theme-color-accent-cool-family,
+  // $theme-color-accent-cool-lightest: colors.$theme-color-accent-cool-lightest,
+  $theme-color-accent-cool-lighter: colors.$theme-color-accent-cool-lighter,
+  $theme-color-accent-cool-light: colors.$theme-color-accent-cool-light,
+  $theme-color-accent-cool: colors.$theme-color-accent-cool,
+  $theme-color-accent-cool-dark: colors.$theme-color-accent-cool-dark,
+  $theme-color-accent-cool-darker: colors.$theme-color-accent-cool-darker,
+  // $theme-color-accent-cool-darkest: colors.$theme-color-accent-cool-darkest,
+
+  // Base (gray) colors
+  // $theme-color-base-family: colors.$theme-color-base-family,
+  // $theme-color-base-lightest: colors.$theme-color-base-lightest,
+  // $theme-color-base-lighter: colors.$theme-color-base-lighter,
+  // $theme-color-base-light: colors.$theme-color-base-light,
+  // $theme-color-base: colors.$theme-color-base,
+  // $theme-color-base-dark: colors.$theme-color-base-dark,
+  // $theme-color-base-darker: colors.$theme-color-base-darker,
+  // $theme-color-base-darkest: colors.$theme-color-base-darkest,
+  // $theme-color-base-ink: colors.$theme-color-base-ink,
+
+  // Error colors
+  // $theme-color-error-family: colors.$theme-color-error-family,
+  // $theme-color-error-lighter: colors.$theme-color-error-lighter,
+  // $theme-color-error-light: colors.$theme-color-error-light,
+  // $theme-color-error: colors.$theme-color-error,
+  // $theme-color-error-dark: colors.$theme-color-error-dark,
+  // $theme-color-error-darker: colors.$theme-color-error-darker,
+
+  // Warning colors
+  // $theme-color-warning-family: colors.$theme-color-warning-family,
+  // $theme-color-warning-lighter: colors.$theme-color-warning-lighter,
+  // $theme-color-warning-light: colors.$theme-color-warning-light,
+  // $theme-color-warning: colors.$theme-color-warning,
+  // $theme-color-warning-dark: colors.$theme-color-warning-dark,
+  // $theme-color-warning-darker: colors.$theme-color-warning-darker,
+
+  // Success colors
+  // $theme-color-success-family: colors.$theme-color-success-family,
+  // $theme-color-success-lighter: colors.$theme-color-success-lighter,
+  // $theme-color-success-light: colors.$theme-color-success-light,
+  // $theme-color-success: colors.$theme-color-success,
+  // $theme-color-success-dark: colors.$theme-color-success-dark,
+  // $theme-color-success-darker: colors.$theme-color-success-darker,
+
+  // Info colors
+  // $theme-color-info-family: colors.$theme-color-info-family,
+  // $theme-color-info-lighter: colors.$theme-color-info-lighter,
+  // $theme-color-info-light: colors.$theme-color-info-light,
+  // $theme-color-info: colors.$theme-color-info,
+  // $theme-color-info-dark: colors.$theme-color-info-dark,
+  // $theme-color-info-darker: colors.$theme-color-info-darker,
+
+  // Disabled colors
+  // $theme-color-disabled-family: colors.$theme-color-disabled-family,
+  // $theme-color-disabled-lighter: colors.$theme-color-disabled-lighter,
+  // $theme-color-disabled-light: colors.$theme-color-disabled-light,
+  // $theme-color-disabled: colors.$theme-color-disabled,
+  // $theme-color-disabled-dark: colors.$theme-color-disabled-dark,
+  // $theme-color-disabled-darker: colors.$theme-color-disabled-darker,
+
+  // Emergency colors
+  // $theme-color-emergency: colors.$theme-color-emergency,
+  // $theme-color-emergency-dark: colors.$theme-color-emergency-dark,
+
+  // Body colors
+  // $theme-body-background-color: colors.$theme-body-background-color,
+  // $theme-text-color: colors.$theme-text-color,
+  // $theme-text-reverse-color: colors.$theme-text-reverse-color,
+
+  // Link colors
+  $theme-link-color: colors.$theme-link-color,
+  $theme-link-visited-color: colors.$theme-link-visited-color,
+  $theme-link-hover-color: colors.$theme-link-hover-color,
+  $theme-link-active-color: colors.$theme-link-active-color,
+  // $theme-link-reverse-color: colors.$theme-link-reverse-color,
+  // $theme-link-reverse-hover-color: colors.$theme-link-reverse-hover-color,
+  // $theme-link-reverse-active-color: colors.$theme-link-reverse-active-color,
+
+
+  // ===============================================================================================
+  // SPACING SETTINGS (from _spacing.scss)
+  // ===============================================================================================
+
+  // Border radius
+  // $theme-border-radius-sm: spacing.$theme-border-radius-sm,
+  // $theme-border-radius-md: spacing.$theme-border-radius-md,
+  // $theme-border-radius-lg: spacing.$theme-border-radius-lg,
+
+  // Column gap
+  // $theme-column-gap-sm: spacing.$theme-column-gap-sm,
+  // $theme-column-gap-md: spacing.$theme-column-gap-md,
+  // $theme-column-gap-lg: spacing.$theme-column-gap-lg,
+  // $theme-column-gap-mobile: spacing.$theme-column-gap-mobile,
+  // $theme-column-gap-desktop: spacing.$theme-column-gap-desktop,
+
+  // Grid container
+  $theme-grid-container-max-width: spacing.$theme-grid-container-max-width,
+
+  // Site margins
+  $theme-site-margins-breakpoint: spacing.$theme-site-margins-breakpoint,
+  $theme-site-margins-width: spacing.$theme-site-margins-width,
+  $theme-site-margins-mobile-width: spacing.$theme-site-margins-mobile-width,
+
+
+  // ===============================================================================================
+  // TYPOGRAPHY SETTINGS (from _typography.scss)
+  // ===============================================================================================
+
+  // Root font size
+  // $theme-respect-user-font-size: typography.$theme-respect-user-font-size,
+  // $theme-root-font-size: typography.$theme-root-font-size,
+
+  // Global styles
+  // $theme-global-paragraph-styles: typography.$theme-global-paragraph-styles,
+  // $theme-global-link-styles: typography.$theme-global-link-styles,
+  // $theme-global-content-styles: typography.$theme-global-content-styles,
+
+  // Browser compatibility
+  // $theme-font-browser-compatibility: typography.$theme-font-browser-compatibility,
+
+  // Font path
+  $theme-font-path: typography.$theme-font-path,
+
+  // Typeface tokens
+  // $theme-typeface-tokens: typography.$theme-typeface-tokens,
+
+  // Type-based font settings
+  // $theme-font-type-sans: typography.$theme-font-type-sans,
+  // $theme-font-type-serif: typography.$theme-font-type-serif,
+  // $theme-font-type-mono: typography.$theme-font-type-mono,
+  // $theme-font-type-cond: typography.$theme-font-type-cond,
+  // $theme-font-type-icon: typography.$theme-font-type-icon,
+  // $theme-font-type-lang: typography.$theme-font-type-lang,
+
+  // Custom font stacks
+  // $theme-font-cond-custom-stack: typography.$theme-font-cond-custom-stack,
+  // $theme-font-icon-custom-stack: typography.$theme-font-icon-custom-stack,
+  // $theme-font-lang-custom-stack: typography.$theme-font-lang-custom-stack,
+  // $theme-font-mono-custom-stack: typography.$theme-font-mono-custom-stack,
+  // $theme-font-sans-custom-stack: typography.$theme-font-sans-custom-stack,
+  // $theme-font-serif-custom-stack: typography.$theme-font-serif-custom-stack,
+
+  // Custom font source files
+  // $theme-font-cond-custom-src: typography.$theme-font-cond-custom-src,
+  // $theme-font-icon-custom-src: typography.$theme-font-icon-custom-src,
+  // $theme-font-lang-custom-src: typography.$theme-font-lang-custom-src,
+  // $theme-font-mono-custom-src: typography.$theme-font-mono-custom-src,
+  // $theme-font-sans-custom-src: typography.$theme-font-sans-custom-src,
+  // $theme-font-serif-custom-src: typography.$theme-font-serif-custom-src,
+
+  // Role-based font settings
+  // $theme-font-role-ui: typography.$theme-font-role-ui,
+  // $theme-font-role-heading: typography.$theme-font-role-heading,
+  // $theme-font-role-body: typography.$theme-font-role-body,
+  // $theme-font-role-code: typography.$theme-font-role-code,
+  // $theme-font-role-alt: typography.$theme-font-role-alt,
+
+  // Type scale
+  // $theme-type-scale-3xs: typography.$theme-type-scale-3xs,
+  // $theme-type-scale-2xs: typography.$theme-type-scale-2xs,
+  // $theme-type-scale-xs: typography.$theme-type-scale-xs,
+  // $theme-type-scale-sm: typography.$theme-type-scale-sm,
+  // $theme-type-scale-md: typography.$theme-type-scale-md,
+  // $theme-type-scale-lg: typography.$theme-type-scale-lg,
+  // $theme-type-scale-xl: typography.$theme-type-scale-xl,
+  // $theme-type-scale-2xl: typography.$theme-type-scale-2xl,
+  // $theme-type-scale-3xl: typography.$theme-type-scale-3xl,
+
+  // Font weights
+  // $theme-font-weight-thin: typography.$theme-font-weight-thin,
+  $theme-font-weight-light: typography.$theme-font-weight-light,
+  $theme-font-weight-normal: typography.$theme-font-weight-normal,
+  // $theme-font-weight-medium: typography.$theme-font-weight-medium,
+  $theme-font-weight-semibold: typography.$theme-font-weight-semibold,
+  $theme-font-weight-bold: typography.$theme-font-weight-bold,
+  // $theme-font-weight-heavy: typography.$theme-font-weight-heavy,
+  $theme-generate-all-weights: typography.$theme-generate-all-weights,
+
+  // Body typography
+  // $theme-body-font-family: typography.$theme-body-font-family,
+  // $theme-body-font-size: typography.$theme-body-font-size,
+  // $theme-body-line-height: typography.$theme-body-line-height,
+  // $theme-style-body-element: typography.$theme-style-body-element,
+
+  // Heading typography
+  // $theme-h1-font-size: typography.$theme-h1-font-size,
+  // $theme-h2-font-size: typography.$theme-h2-font-size,
+  // $theme-h3-font-size: typography.$theme-h3-font-size,
+  // $theme-h4-font-size: typography.$theme-h4-font-size,
+  // $theme-h5-font-size: typography.$theme-h5-font-size,
+  // $theme-h6-font-size: typography.$theme-h6-font-size,
+  // $theme-heading-line-height: typography.$theme-heading-line-height,
+
+  // Additional text sizes
+  // $theme-small-font-size: typography.$theme-small-font-size,
+  // $theme-display-font-size: typography.$theme-display-font-size,
+
+  // Text measure
+  // $theme-text-measure-narrow: typography.$theme-text-measure-narrow,
+  $theme-text-measure: typography.$theme-text-measure,
+  // $theme-text-measure-wide: typography.$theme-text-measure-wide,
+
+  // Prose typography
+  // $theme-prose-font-family: typography.$theme-prose-font-family,
+
+  // Lead (intro) typography
+  // $theme-lead-font-family: typography.$theme-lead-font-family,
+  // $theme-lead-font-size: typography.$theme-lead-font-size,
+  // $theme-lead-line-height: typography.$theme-lead-line-height,
+  // $theme-lead-measure: typography.$theme-lead-measure,
+
+  // Typography margins
+  // $theme-heading-margin-top: typography.$theme-heading-margin-top,
+  // $theme-paragraph-margin-top: typography.$theme-paragraph-margin-top,
+
+
+  // ===============================================================================================
+  // COMPONENT SETTINGS (from _components.scss)
+  // ===============================================================================================
+
+  // Accordion
+  // $theme-accordion-background-color: components.$theme-accordion-background-color,
+  // $theme-accordion-border-width: components.$theme-accordion-border-width,
+  // $theme-accordion-border-color: components.$theme-accordion-border-color,
+  // $theme-accordion-button-background-color: components.$theme-accordion-button-background-color,
+  // $theme-accordion-font-family: components.$theme-accordion-font-family,
+
+  // Alert
+  // $theme-alert-bar-width: components.$theme-alert-bar-width,
+  // $theme-alert-font-family: components.$theme-alert-font-family,
+  // $theme-alert-icon-size: components.$theme-alert-icon-size,
+  // $theme-alert-padding-x: components.$theme-alert-padding-x,
+  // $theme-alert-padding-y: components.$theme-alert-padding-y,
+  // $theme-alert-text-color: components.$theme-alert-text-color,
+  // $theme-alert-link-color: components.$theme-alert-link-color,
+  // $theme-alert-text-reverse-color: components.$theme-alert-text-reverse-color,
+  // $theme-alert-link-reverse-color: components.$theme-alert-link-reverse-color,
+
+  // Banner
+  $theme-banner-background-color: components.$theme-banner-background-color,
+  // $theme-banner-font-family: components.$theme-banner-font-family,
+  $theme-banner-link-color: components.$theme-banner-link-color,
+  $theme-banner-max-width: components.$theme-banner-max-width,
+
+  // Breadcrumb
+  // $theme-breadcrumb-background-color: components.$theme-breadcrumb-background-color,
+  // $theme-breadcrumb-font-family: components.$theme-breadcrumb-font-family,
+  // $theme-breadcrumb-font-size: components.$theme-breadcrumb-font-size,
+  // $theme-breadcrumb-link-color: components.$theme-breadcrumb-link-color,
+  // $theme-breadcrumb-min-width: components.$theme-breadcrumb-min-width,
+  // $theme-breadcrumb-padding-bottom: components.$theme-breadcrumb-padding-bottom,
+  // $theme-breadcrumb-padding-top: components.$theme-breadcrumb-padding-top,
+  // $theme-breadcrumb-padding-x: components.$theme-breadcrumb-padding-x,
+  // $theme-breadcrumb-separator-color: components.$theme-breadcrumb-separator-color,
+
+  // Button
+  // $theme-button-border-radius: components.$theme-button-border-radius,
+  // $theme-button-font-family: components.$theme-button-font-family,
+  // $theme-button-icon-gap: components.$theme-button-icon-gap,
+  // $theme-button-small-width: components.$theme-button-small-width,
+  // $theme-button-stroke-width: components.$theme-button-stroke-width,
+
+  // Card
+  $theme-card-border-color: components.$theme-card-border-color,
+  $theme-card-border-radius: components.$theme-card-border-radius,
+  $theme-card-border-width: components.$theme-card-border-width,
+  // $theme-card-gap: components.$theme-card-gap,
+  // $theme-card-flag-min-width: components.$theme-card-flag-min-width,
+  // $theme-card-flag-image-width: components.$theme-card-flag-image-width,
+  // $theme-card-font-family: components.$theme-card-font-family,
+  // $theme-card-header-typeset: components.$theme-card-header-typeset,
+  // $theme-card-margin-bottom: components.$theme-card-margin-bottom,
+  // $theme-card-padding-perimeter: components.$theme-card-padding-perimeter,
+  // $theme-card-padding-y: components.$theme-card-padding-y,
+
+  // Checkbox
+  // $theme-checkbox-border-radius: components.$theme-checkbox-border-radius,
+
+  // Collection
+  // $theme-collection-font-family: components.$theme-collection-font-family,
+  // $theme-collection-header-typeset: components.$theme-collection-header-typeset,
+
+  // Footer
+  // $theme-footer-font-family: components.$theme-footer-font-family,
+  $theme-footer-max-width: components.$theme-footer-max-width,
+
+  // Form
+  // $theme-form-font-family: components.$theme-form-font-family,
+
+  // Header
+  // $theme-header-font-family: components.$theme-header-font-family,
+  $theme-header-logo-text-width: components.$theme-header-logo-text-width,
+  $theme-header-max-width: components.$theme-header-max-width,
+  // $theme-header-min-width: components.$theme-header-min-width,
+
+  // Hero
+  $theme-hero-image: components.$theme-hero-image,
+
+  // Icon list
+  // $theme-icon-list-font-family: components.$theme-icon-list-font-family,
+  // $theme-icon-list-title-font-family: components.$theme-icon-list-title-font-family,
+
+  // Identifier
+  // $theme-identifier-background-color: components.$theme-identifier-background-color,
+  // $theme-identifier-font-family: components.$theme-identifier-font-family,
+  // $theme-identifier-identity-domain-color: components.$theme-identifier-identity-domain-color,
+  $theme-identifier-max-width: components.$theme-identifier-max-width,
+  // $theme-identifier-primary-link-color: components.$theme-identifier-primary-link-color,
+  // $theme-identifier-secondary-link-color: components.$theme-identifier-secondary-link-color,
+
+  // In-page navigation
+  // $theme-in-page-nav-background-color: components.$theme-in-page-nav-background-color,
+  // $theme-in-page-nav-background-padding: components.$theme-in-page-nav-background-padding,
+  // $theme-in-page-nav-background-radius: components.$theme-in-page-nav-background-radius,
+  // $theme-in-page-nav-bar-color: components.$theme-in-page-nav-bar-color,
+  // $theme-in-page-nav-bar-width: components.$theme-in-page-nav-bar-width,
+  // $theme-in-page-nav-font-family: components.$theme-in-page-nav-font-family,
+  $theme-in-page-nav-link-color: components.$theme-in-page-nav-link-color,
+  $theme-in-page-nav-main-content-max-width: components.$theme-in-page-nav-main-content-max-width,
+  // $theme-in-page-nav-margin-left: components.$theme-in-page-nav-margin-left,
+  // $theme-in-page-nav-margin-top: components.$theme-in-page-nav-margin-top,
+  // $theme-in-page-nav-top: components.$theme-in-page-nav-top,
+
+  // Input
+  // $theme-input-background-color: components.$theme-input-background-color,
+  // $theme-input-line-height: components.$theme-input-line-height,
+  // $theme-input-max-width: components.$theme-input-max-width,
+  // $theme-input-select-border-width: components.$theme-input-select-border-width,
+  // $theme-input-select-size: components.$theme-input-select-size,
+  // $theme-input-state-border-width: components.$theme-input-state-border-width,
+  // $theme-input-tile-border-radius: components.$theme-input-tile-border-radius,
+  // $theme-input-tile-border-width: components.$theme-input-tile-border-width,
+
+  // Link (external)
+  // $theme-external-link-sr-label-tab-new: components.$theme-external-link-sr-label-tab-new,
+  // $theme-external-link-sr-label-tab-same: components.$theme-external-link-sr-label-tab-same,
+
+  // Modal
+  // $theme-modal-border-radius: components.$theme-modal-border-radius,
+  // $theme-modal-default-max-width: components.$theme-modal-default-max-width,
+  // $theme-modal-lg-content-max-width: components.$theme-modal-lg-content-max-width,
+  // $theme-modal-lg-max-width: components.$theme-modal-lg-max-width,
+
+  // Navigation
+  // $theme-navigation-font-family: components.$theme-navigation-font-family,
+  // $theme-megamenu-columns: components.$theme-megamenu-columns,
+
+  // Pagination
+  // $theme-pagination-background-color: components.$theme-pagination-background-color,
+  // $theme-pagination-breakpoint: components.$theme-pagination-breakpoint,
+  // $theme-pagination-button-border-radius: components.$theme-pagination-button-border-radius,
+  // $theme-pagination-button-border-width: components.$theme-pagination-button-border-width,
+  // $theme-pagination-font-family: components.$theme-pagination-font-family,
+
+  // Process list
+  // $theme-process-list-counter-background-color: components.$theme-process-list-counter-background-color,
+  // $theme-process-list-counter-border-color: components.$theme-process-list-counter-border-color,
+  // $theme-process-list-counter-border-width: components.$theme-process-list-counter-border-width,
+  // $theme-process-list-counter-font-family: components.$theme-process-list-counter-font-family,
+  // $theme-process-list-counter-font-size: components.$theme-process-list-counter-font-size,
+  // $theme-process-list-counter-gap-color: components.$theme-process-list-counter-gap-color,
+  // $theme-process-list-counter-gap-width: components.$theme-process-list-counter-gap-width,
+  // $theme-process-list-counter-size: components.$theme-process-list-counter-size,
+  // $theme-process-list-counter-text-color: components.$theme-process-list-counter-text-color,
+  // $theme-process-list-connector-color: components.$theme-process-list-connector-color,
+  // $theme-process-list-connector-width: components.$theme-process-list-connector-width,
+  // $theme-process-list-font-family: components.$theme-process-list-font-family,
+  // $theme-process-list-font-size: components.$theme-process-list-font-size,
+  // $theme-process-list-heading-color: components.$theme-process-list-heading-color,
+  // $theme-process-list-heading-font-family: components.$theme-process-list-heading-font-family,
+  // $theme-process-list-heading-font-size: components.$theme-process-list-heading-font-size,
+
+  // Search
+  // $theme-search-font-family: components.$theme-search-font-family,
+  // $theme-search-min-width: components.$theme-search-min-width,
+
+  // Sidenav
+  // $theme-sidenav-current-border-width: components.$theme-sidenav-current-border-width,
+  // $theme-sidenav-font-family: components.$theme-sidenav-font-family,
+
+  // Site alert
+  $theme-site-alert-max-width: components.$theme-site-alert-max-width,
+
+  // Step indicator
+  // $theme-step-indicator-background-color: components.$theme-step-indicator-background-color,
+  // $theme-step-indicator-counter-gap: components.$theme-step-indicator-counter-gap,
+  // $theme-step-indicator-counter-border-width: components.$theme-step-indicator-counter-border-width,
+  // $theme-step-indicator-font-family: components.$theme-step-indicator-font-family,
+  // $theme-step-indicator-heading-font-family: components.$theme-step-indicator-heading-font-family,
+  // $theme-step-indicator-heading-color: components.$theme-step-indicator-heading-color,
+  // $theme-step-indicator-heading-font-size: components.$theme-step-indicator-heading-font-size,
+  // $theme-step-indicator-heading-font-size-small: components.$theme-step-indicator-heading-font-size-small,
+  // $theme-step-indicator-label-font-size: components.$theme-step-indicator-label-font-size,
+  // $theme-step-indicator-min-width: components.$theme-step-indicator-min-width,
+  // $theme-step-indicator-segment-color-pending: components.$theme-step-indicator-segment-color-pending,
+  // $theme-step-indicator-segment-color-complete: components.$theme-step-indicator-segment-color-complete,
+  // $theme-step-indicator-segment-color-current: components.$theme-step-indicator-segment-color-current,
+  // $theme-step-indicator-segment-gap: components.$theme-step-indicator-segment-gap,
+  // $theme-step-indicator-segment-height: components.$theme-step-indicator-segment-height,
+  // $theme-step-indicator-text-pending-color: components.$theme-step-indicator-text-pending-color,
+
+  // Summary box
+  // $theme-summary-box-background-color: components.$theme-summary-box-background-color,
+  // $theme-summary-box-border-color: components.$theme-summary-box-border-color,
+  // $theme-summary-box-border-width: components.$theme-summary-box-border-width,
+  // $theme-summary-box-border-radius: components.$theme-summary-box-border-radius,
+  // $theme-summary-box-font-family: components.$theme-summary-box-font-family,
+  // $theme-summary-box-link-color: components.$theme-summary-box-link-color,
+  // $theme-summary-box-text-color: components.$theme-summary-box-text-color,
+
+  // Table
+  // $theme-table-background-color: components.$theme-table-background-color,
+  // $theme-table-border-color: components.$theme-table-border-color,
+  $theme-table-header-background-color: components.$theme-table-header-background-color,
+  // $theme-table-header-text-color: components.$theme-table-header-text-color,
+  // $theme-table-sorted-background-color: components.$theme-table-sorted-background-color,
+  // $theme-table-sorted-header-background-color: components.$theme-table-sorted-header-background-color,
+  // $theme-table-sorted-icon-color: components.$theme-table-sorted-icon-color,
+  // $theme-table-sorted-stripe-background-color: components.$theme-table-sorted-stripe-background-color,
+  // $theme-table-sticky-top-offset: components.$theme-table-sticky-top-offset,
+  // $theme-table-stripe-background-color: components.$theme-table-stripe-background-color,
+  // $theme-table-stripe-text-color: components.$theme-table-stripe-text-color,
+  // $theme-table-text-color: components.$theme-table-text-color,
+  // $theme-table-unsorted-icon-color: components.$theme-table-unsorted-icon-color,
+
+  // Tooltip
+  // $theme-tooltip-background-color: components.$theme-tooltip-background-color,
+  // $theme-tooltip-font-color: components.$theme-tooltip-font-color,
+  // $theme-tooltip-font-size: components.$theme-tooltip-font-size,
+
+
+  // ===============================================================================================
+  // UTILITY SETTINGS (from _utilities.scss)
+  // ===============================================================================================
+
+  // Global utility settings
+  $utilities-use-important: utilities.$utilities-use-important,
+  $output-these-utilities: utilities.$output-these-utilities,
+  $theme-utility-breakpoints: utilities.$theme-utility-breakpoints,
+  // $theme-utility-breakpoints-custom: utilities.$theme-utility-breakpoints-custom,
+
+  // Utility module settings
+  $add-aspect-settings: utilities.$add-aspect-settings,
+  $add-list-reset-settings: utilities.$add-list-reset-settings,
+  $align-items-settings: utilities.$align-items-settings,
+  $align-self-settings: utilities.$align-self-settings,
+  $background-color-settings: utilities.$background-color-settings,
+  $border-settings: utilities.$border-settings,
+  $border-color-settings: utilities.$border-color-settings,
+  $border-radius-settings: utilities.$border-radius-settings,
+  $border-style-settings: utilities.$border-style-settings,
+  $border-width-settings: utilities.$border-width-settings,
+  $bottom-settings: utilities.$bottom-settings,
+  $box-shadow-settings: utilities.$box-shadow-settings,
+  $circle-settings: utilities.$circle-settings,
+  $clearfix-settings: utilities.$clearfix-settings,
+  $color-settings: utilities.$color-settings,
+  $cursor-settings: utilities.$cursor-settings,
+  $display-settings: utilities.$display-settings,
+  $flex-settings: utilities.$flex-settings,
+  $flex-direction-settings: utilities.$flex-direction-settings,
+  $flex-wrap-settings: utilities.$flex-wrap-settings,
+  $float-settings: utilities.$float-settings,
+  $font-settings: utilities.$font-settings,
+  $font-family-settings: utilities.$font-family-settings,
+  $font-feature-settings: utilities.$font-feature-settings,
+  $font-style-settings: utilities.$font-style-settings,
+  $font-weight-settings: utilities.$font-weight-settings,
+  $height-settings: utilities.$height-settings,
+  $justify-content-settings: utilities.$justify-content-settings,
+  $left-settings: utilities.$left-settings,
+  $letter-spacing-settings: utilities.$letter-spacing-settings,
+  $line-height-settings: utilities.$line-height-settings,
+  $margin-settings: utilities.$margin-settings,
+  $max-height-settings: utilities.$max-height-settings,
+  $max-width-settings: utilities.$max-width-settings,
+  $measure-settings: utilities.$measure-settings,
+  $min-height-settings: utilities.$min-height-settings,
+  $min-width-settings: utilities.$min-width-settings,
+  $opacity-settings: utilities.$opacity-settings,
+  $order-settings: utilities.$order-settings,
+  $outline-settings: utilities.$outline-settings,
+  $outline-color-settings: utilities.$outline-color-settings,
+  $overflow-settings: utilities.$overflow-settings,
+  $padding-settings: utilities.$padding-settings,
+  $pin-settings: utilities.$pin-settings,
+  $position-settings: utilities.$position-settings,
+  $right-settings: utilities.$right-settings,
+  $square-settings: utilities.$square-settings,
+  $text-align-settings: utilities.$text-align-settings,
+  $text-decoration-settings: utilities.$text-decoration-settings,
+  $text-decoration-color-settings: utilities.$text-decoration-color-settings,
+  $text-indent-settings: utilities.$text-indent-settings,
+  $text-transform-settings: utilities.$text-transform-settings,
+  $top-settings: utilities.$top-settings,
+  $vertical-align-settings: utilities.$vertical-align-settings,
+  $whitespace-settings: utilities.$whitespace-settings,
+  $width-settings: utilities.$width-settings,
+  $z-index-settings: utilities.$z-index-settings,
+
+  // Color palettes
+  $global-color-palettes: utilities.$global-color-palettes,
+  $add-aspect-palettes: utilities.$add-aspect-palettes,
+  $add-aspect-manual-values: utilities.$add-aspect-manual-values,
+  $align-items-palettes: utilities.$align-items-palettes,
+  $align-items-manual-values: utilities.$align-items-manual-values,
+  $align-self-palettes: utilities.$align-self-palettes,
+  $align-self-manual-values: utilities.$align-self-manual-values,
+  $background-color-palettes: utilities.$background-color-palettes,
+  $background-color-manual-values: utilities.$background-color-manual-values,
+  $border-palettes: utilities.$border-palettes,
+  $border-manual-values: utilities.$border-manual-values,
+  $border-color-palettes: utilities.$border-color-palettes,
+  $border-color-manual-values: utilities.$border-color-manual-values,
+  $border-radius-palettes: utilities.$border-radius-palettes,
+  $border-radius-manual-values: utilities.$border-radius-manual-values,
+  $border-style-palettes: utilities.$border-style-palettes,
+  $border-style-manual-values: utilities.$border-style-manual-values,
+  $border-width-palettes: utilities.$border-width-palettes,
+  $border-width-manual-values: utilities.$border-width-manual-values,
+  $bottom-palettes: utilities.$bottom-palettes,
+  $bottom-manual-values: utilities.$bottom-manual-values,
+  $box-shadow-palettes: utilities.$box-shadow-palettes,
+  $box-shadow-manual-values: utilities.$box-shadow-manual-values,
+  $circle-palettes: utilities.$circle-palettes,
+  $circle-manual-values: utilities.$circle-manual-values,
+  $color-palettes: utilities.$color-palettes,
+  $color-manual-values: utilities.$color-manual-values,
+  $cursor-palettes: utilities.$cursor-palettes,
+  $cursor-manual-values: utilities.$cursor-manual-values,
+  $display-palettes: utilities.$display-palettes,
+  $display-manual-values: utilities.$display-manual-values,
+  $flex-palettes: utilities.$flex-palettes,
+  $flex-manual-values: utilities.$flex-manual-values,
+  $flex-direction-palettes: utilities.$flex-direction-palettes,
+  $flex-direction-manual-values: utilities.$flex-direction-manual-values,
+  $flex-wrap-palettes: utilities.$flex-wrap-palettes,
+  $flex-wrap-manual-values: utilities.$flex-wrap-manual-values,
+  $float-palettes: utilities.$float-palettes,
+  $float-manual-values: utilities.$float-manual-values,
+  $font-palettes: utilities.$font-palettes,
+  $font-manual-values: utilities.$font-manual-values,
+  $font-family-palettes: utilities.$font-family-palettes,
+  $font-family-manual-values: utilities.$font-family-manual-values,
+  $font-feature-palettes: utilities.$font-feature-palettes,
+  $font-feature-manual-values: utilities.$font-feature-manual-values,
+  $font-style-palettes: utilities.$font-style-palettes,
+  $font-style-manual-values: utilities.$font-style-manual-values,
+  $font-weight-palettes: utilities.$font-weight-palettes,
+  $font-weight-manual-values: utilities.$font-weight-manual-values,
+  $height-palettes: utilities.$height-palettes,
+  $height-manual-values: utilities.$height-manual-values,
+  $justify-content-palettes: utilities.$justify-content-palettes,
+  $justify-content-manual-values: utilities.$justify-content-manual-values,
+  $left-palettes: utilities.$left-palettes,
+  $left-manual-values: utilities.$left-manual-values,
+  $letter-spacing-palettes: utilities.$letter-spacing-palettes,
+  $letter-spacing-manual-values: utilities.$letter-spacing-manual-values,
+  $line-height-palettes: utilities.$line-height-palettes,
+  $line-height-manual-values: utilities.$line-height-manual-values,
+  $margin-palettes: utilities.$margin-palettes,
+  $margin-manual-values: utilities.$margin-manual-values,
+  $margin-vertical-palettes: utilities.$margin-vertical-palettes,
+  $margin-vertical-manual-values: utilities.$margin-vertical-manual-values,
+  $margin-horizontal-palettes: utilities.$margin-horizontal-palettes,
+  $margin-horizontal-manual-values: utilities.$margin-horizontal-manual-values,
+  $max-height-palettes: utilities.$max-height-palettes,
+  $max-height-manual-values: utilities.$max-height-manual-values,
+  $max-width-palettes: utilities.$max-width-palettes,
+  $max-width-manual-values: utilities.$max-width-manual-values,
+  $measure-palettes: utilities.$measure-palettes,
+  $measure-manual-values: utilities.$measure-manual-values,
+  $min-height-palettes: utilities.$min-height-palettes,
+  $min-height-manual-values: utilities.$min-height-manual-values,
+  $min-width-palettes: utilities.$min-width-palettes,
+  $min-width-manual-values: utilities.$min-width-manual-values,
+  $opacity-palettes: utilities.$opacity-palettes,
+  $opacity-manual-values: utilities.$opacity-manual-values,
+  $order-palettes: utilities.$order-palettes,
+  $order-manual-values: utilities.$order-manual-values,
+  $outline-palettes: utilities.$outline-palettes,
+  $outline-manual-values: utilities.$outline-manual-values,
+  $outline-color-palettes: utilities.$outline-color-palettes,
+  $outline-color-manual-values: utilities.$outline-color-manual-values,
+  $overflow-palettes: utilities.$overflow-palettes,
+  $overflow-manual-values: utilities.$overflow-manual-values,
+  $padding-palettes: utilities.$padding-palettes,
+  $padding-manual-values: utilities.$padding-manual-values,
+  $position-palettes: utilities.$position-palettes,
+  $position-manual-values: utilities.$position-manual-values,
+  $right-palettes: utilities.$right-palettes,
+  $right-manual-values: utilities.$right-manual-values,
+  $square-palettes: utilities.$square-palettes,
+  $square-manual-values: utilities.$square-manual-values,
+  $text-align-palettes: utilities.$text-align-palettes,
+  $text-align-manual-values: utilities.$text-align-manual-values,
+  $text-decoration-palettes: utilities.$text-decoration-palettes,
+  $text-decoration-manual-values: utilities.$text-decoration-manual-values,
+  $text-decoration-color-palettes: utilities.$text-decoration-color-palettes,
+  $text-decoration-color-manual-values: utilities.$text-decoration-color-manual-values,
+  $text-indent-palettes: utilities.$text-indent-palettes,
+  $text-indent-manual-values: utilities.$text-indent-manual-values,
+  $text-transform-palettes: utilities.$text-transform-palettes,
+  $text-transform-manual-values: utilities.$text-transform-manual-values,
+  $top-palettes: utilities.$top-palettes,
+  $top-manual-values: utilities.$top-manual-values,
+  $vertical-align-palettes: utilities.$vertical-align-palettes,
+  $vertical-align-manual-values: utilities.$vertical-align-manual-values,
+  $whitespace-palettes: utilities.$whitespace-palettes,
+  $whitespace-manual-values: utilities.$whitespace-manual-values,
+  $width-palettes: utilities.$width-palettes,
+  $width-manual-values: utilities.$width-manual-values,
+  $z-index-palettes: utilities.$z-index-palettes,
+  $z-index-manual-values: utilities.$z-index-manual-values,
+
+);

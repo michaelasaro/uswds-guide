@@ -1,0 +1,137 @@
+// =================================================================================================
+//
+//   ██████╗ ███████╗███╗   ██╗███████╗██████╗  █████╗ ██╗
+//  ██╔════╝ ██╔════╝████╗  ██║██╔════╝██╔══██╗██╔══██╗██║
+//  ██║  ███╗█████╗  ██╔██╗ ██║█████╗  ██████╔╝███████║██║
+//  ██║   ██║██╔══╝  ██║╚██╗██║██╔══╝  ██╔══██╗██╔══██║██║
+//  ╚██████╔╝███████╗██║ ╚████║███████╗██║  ██║██║  ██║███████╗
+//   ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+//
+//  GENERAL SETTINGS
+//  Global settings for paths, warnings, focus styles, and more.
+//
+//  📖 Learn more: https://designsystem.digital.gov/documentation/settings/
+//
+// =================================================================================================
+//
+//  ✏️  HOW TO CUSTOMIZE:
+//      1. Find the setting you want to change below
+//      2. Uncomment it (remove the //) and set your value
+//      3. Uncomment the matching line in _bridge.scss
+//
+//      That's it! Both files have all settings pre-written - just uncomment to activate.
+//
+// =================================================================================================
+
+
+// -------------------------------------------------------------------------------------------------
+// 📁 IMAGE PATH
+// -------------------------------------------------------------------------------------------------
+// Path to your image files, relative to your compiled CSS.
+// -------------------------------------------------------------------------------------------------
+
+$theme-image-path: "/dist/uswds/images";
+    // Default: "../img"
+    // Use a path relative to the location of the final compiled CSS
+
+
+// -------------------------------------------------------------------------------------------------
+// 🔔 COMPILE WARNINGS & NOTIFICATIONS
+// -------------------------------------------------------------------------------------------------
+// Control Sass warnings and USWDS notifications during compilation.
+// -------------------------------------------------------------------------------------------------
+
+$theme-show-compile-warnings: true;
+    // Default: true
+    // Show Sass warnings when functions and mixins use non-standard tokens
+
+$theme-show-notifications: true;
+    // Default: true
+    // Show updates and notifications about the design system
+
+
+// -------------------------------------------------------------------------------------------------
+// 🏷️ NAMESPACE
+// -------------------------------------------------------------------------------------------------
+// Customize the prefix for grid and utility classes.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-namespace: (
+//     "grid": (
+//       namespace: "grid-",
+//       output: true,
+//     ),
+//     "utility": (
+//       namespace: "u-",
+//       output: false,
+//     ),
+//   );
+    // Default: grid- for grid, u- for utilities
+    // Set output: false to disable utility class generation
+
+
+// -------------------------------------------------------------------------------------------------
+// ➖ PREFIX SEPARATOR
+// -------------------------------------------------------------------------------------------------
+// Character that separates responsive/state prefixes from class names.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-prefix-separator: "\\:";
+    // Default: "\\:" (escaped colon)
+    // The default needs two backslashes to be properly escaped
+
+
+// -------------------------------------------------------------------------------------------------
+// 📐 LAYOUT GRID
+// -------------------------------------------------------------------------------------------------
+// Layout grid configuration options.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-layout-grid-use-important: false;
+    // Default: false
+    // Should the layout grid classes output with !important
+
+
+// -------------------------------------------------------------------------------------------------
+// 📦 BORDER BOX SIZING
+// -------------------------------------------------------------------------------------------------
+// Apply box-sizing: border-box to all elements.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-global-border-box-sizing: true;
+    // Default: true
+    // When true, sets box-sizing of all elements to border-box
+
+
+// -------------------------------------------------------------------------------------------------
+// 🎯 FOCUS STYLES
+// -------------------------------------------------------------------------------------------------
+// Customize the appearance of focus outlines for accessibility.
+// -------------------------------------------------------------------------------------------------
+
+$theme-focus-color: "primary";
+    // Default: "blue-40v"
+    // The color of the focus outline
+
+// $theme-focus-offset: 0;
+    // Default: 0
+    // The offset between the element and the focus outline
+
+// $theme-focus-style: solid;
+    // Default: solid
+    // The style of the focus outline (solid, dotted, dashed)
+
+// $theme-focus-width: 0.5;
+    // Default: 0.5
+    // The width of the focus outline in spacing units
+
+
+// -------------------------------------------------------------------------------------------------
+// 🖼️ ICONS
+// -------------------------------------------------------------------------------------------------
+// Icon size settings.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-icon-image-size: 2;
+    // Default: 2
+    // The size of a standard UI icon (like a close box) in spacing units

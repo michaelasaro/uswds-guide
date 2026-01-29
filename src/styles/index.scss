@@ -1,16 +1,99 @@
-// ------------------------------------------------------------------------------------------------------
-// index.scss
-// This is the main SCSS entry point for the FPAC Demonstration application styles.
-// It forwards core USWDS styles, FPAC-specific customizations, and additional style modules.
-// ------------------------------------------------------------------------------------------------------
+// =================================================================================================
+//
+//  ███████╗██████╗  █████╗  ██████╗    ██████╗ ███████╗███████╗██╗ ██████╗ ███╗   ██╗
+//  ██╔════╝██╔══██╗██╔══██╗██╔════╝    ██╔══██╗██╔════╝██╔════╝██║██╔════╝ ████╗  ██║
+//  █████╗  ██████╔╝███████║██║         ██║  ██║█████╗  ███████╗██║██║  ███╗██╔██╗ ██║
+//  ██╔══╝  ██╔═══╝ ██╔══██║██║         ██║  ██║██╔══╝  ╚════██║██║██║   ██║██║╚██╗██║
+//  ██║     ██║     ██║  ██║╚██████╗    ██████╔╝███████╗███████║██║╚██████╔╝██║ ╚████║
+//  ╚═╝     ╚═╝     ╚═╝  ╚═╝ ╚═════╝    ╚═════╝ ╚══════╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+//
+//                         SYSTEM STYLES - MAIN ENTRY POINT
+//
+// =================================================================================================
+//
+//  📖 WHAT IS THIS FILE?
+//  ---------------------
+//  This is the main entry point for the FPAC Design System styles. When you run
+//  `npm run build`, this file tells Sass what to compile and in what order.
+//
+//
+//  🏗️ HOW IT WORKS:
+//  ----------------
+//  The styles are loaded in 3 layers:
+//
+//    1. BRIDGE (Settings + USWDS Core)
+//       Your custom design tokens are passed to USWDS, which generates
+//       all the base styles, components, and utilities.
+//
+//    2. USWDS COMPONENTS
+//       The full USWDS component library (buttons, forms, navigation, etc.)
+//
+//    3. CUSTOM STYLES
+//       Your own CSS that goes on top of everything else.
+//       Perfect for tweaks that aren't possible with design tokens.
+//
+//
+//  🎨 TO CUSTOMIZE YOUR DESIGN:
+//  ----------------------------
+//  All USWDS settings are pre-written in two places - just uncomment to activate!
+//
+//  STEP 1: Find the setting in the appropriate partial file:
+//
+//    📁 src/styles/uswds-settings/
+//       ├── _colors.scss       ← Brand colors
+//       ├── _typography.scss   ← Fonts and text
+//       ├── _spacing.scss      ← Layout and margins
+//       ├── _components.scss   ← Component settings
+//       ├── _utilities.scss    ← Utility classes
+//       └── _general.scss      ← Paths and global settings
+//
+//  STEP 2: Uncomment the setting and change its value
+//
+//  STEP 3: Uncomment the matching line in _bridge.scss
+//
+//  STEP 4: Run: npm run build
+//
+//  ✨ That's it! Both files have all settings pre-written - no typing needed.
+//
+//
+//  ⚡ TO ADD CUSTOM CSS:
+//  ---------------------
+//  Edit: src/styles/fpac-custom-styles.scss
+//  This is loaded LAST, so it can override anything.
+//
+// =================================================================================================
 
-// Forward the FPAC custom design tokens
-// Forward these before the core USWDS styles so they are available to override default USWDS token values
-@forward "./fpac-uswds-styles.scss";
 
-// Forward the core USWDS styles to be modified by the FPAC design tokens
-@forward "../../node_modules/@uswds/uswds/packages/uswds/index";
+// -------------------------------------------------------------------------------------------------
+// LAYER 1: BRIDGE
+// -------------------------------------------------------------------------------------------------
+// The bridge file loads your settings and configures USWDS.
+// This MUST come before the USWDS package.
+//
+// 📁 See: src/styles/_bridge.scss (for the plumbing)
+// 📁 See: src/styles/uswds-settings/ (for your design tokens)
+// -------------------------------------------------------------------------------------------------
+
+@forward "./bridge";
 
 
-// Forward additional custom styles for the FPAC-design-system
-@forward "./fpac-custom-styles.scss";
+// -------------------------------------------------------------------------------------------------
+// LAYER 2: USWDS PACKAGE
+// -------------------------------------------------------------------------------------------------
+// This loads all the USWDS components, utilities, and base styles.
+// Your settings from the bridge are already applied at this point.
+// -------------------------------------------------------------------------------------------------
+
+@forward "../../node_modules/@uswds/uswds/packages/uswds";
+
+
+// -------------------------------------------------------------------------------------------------
+// LAYER 3: CUSTOM STYLES
+// -------------------------------------------------------------------------------------------------
+// Add your own CSS here for things that can't be done with design tokens.
+// This loads LAST so it can override anything above.
+//
+// 📁 See: src/styles/fpac-custom-styles.scss
+// -------------------------------------------------------------------------------------------------
+
+@forward "./custom-styles.scss";

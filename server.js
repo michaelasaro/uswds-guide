@@ -1,16 +1,30 @@
-// Express server setup
+// ============================================================================
+// Development Server
+// ============================================================================
+// A simple Express server for previewing the documentation site locally.
+//
+// Usage:
+//   npm run serve     → Starts server at http://localhost:3000
+//
+// The server serves static files from the project root, which includes:
+//   - /site/          → Documentation HTML pages
+//   - /dist/civic/    → Compiled theme CSS, fonts, images
+//   - /dist/uswds/    → USWDS assets (fonts, icons, JS)
+//
+// ============================================================================
+
 const express = require('express');
 const app = express();
 const path = require('path');
 const port = 3000;
 
-// Serve static files from the 'fpac' directory
-app.use(express.static(path.join(__dirname, './')));
-
 // Redirect root URL to the documentation homepage
 app.get('/', (req, res) => {
-    res.redirect('/fpac-website/pages/home.html');
+    res.redirect('/site/pages/home.html');
 });
+
+// Serve static files from the project root
+app.use(express.static(path.join(__dirname, './')));
 
 // Start the server
 app.listen(port, () => {

@@ -1,0 +1,1136 @@
+// =================================================================================================
+//
+//  ██╗   ██╗████████╗██╗██╗     ██╗████████╗██╗███████╗███████╗
+//  ██║   ██║╚══██╔══╝██║██║     ██║╚══██╔══╝██║██╔════╝██╔════╝
+//  ██║   ██║   ██║   ██║██║     ██║   ██║   ██║█████╗  ███████╗
+//  ██║   ██║   ██║   ██║██║     ██║   ██║   ██║██╔══╝  ╚════██║
+//  ╚██████╔╝   ██║   ██║███████╗██║   ██║   ██║███████╗███████║
+//   ╚═════╝    ╚═╝   ╚═╝╚══════╝╚═╝   ╚═╝   ╚═╝╚══════╝╚══════╝
+//
+//  UTILITIES SETTINGS
+//  Control which utility classes are generated and their responsive/state variants.
+//
+//  📖 Learn more: https://designsystem.digital.gov/utilities/
+//
+// =================================================================================================
+//
+//  ✏️  HOW TO CUSTOMIZE:
+//      1. Find the setting you want to change below
+//      2. Uncomment it (remove the //) and set your value
+//      3. Uncomment the matching line in _bridge.scss
+//
+//      That's it! Both files have all settings pre-written - just uncomment to activate.
+//
+// =================================================================================================
+
+
+// -------------------------------------------------------------------------------------------------
+// ❗ UTILITIES USE !IMPORTANT
+// -------------------------------------------------------------------------------------------------
+
+$utilities-use-important: false;
+    // Default: true
+    // Output all utilities with !important
+
+
+// -------------------------------------------------------------------------------------------------
+// 📋 UTILITY OUTPUT LIST
+// -------------------------------------------------------------------------------------------------
+
+$output-these-utilities: default;
+    // Default: default (includes all utilities)
+    // Include a list of utility modules to output
+    // Example: ("align-items", "border", "margin", "padding")
+
+
+// -------------------------------------------------------------------------------------------------
+// 📱 UTILITY BREAKPOINTS
+// -------------------------------------------------------------------------------------------------
+// Which breakpoints does your project need?
+// Enable any breakpoint used by utilities or layout grid.
+// -------------------------------------------------------------------------------------------------
+
+$theme-utility-breakpoints: (
+  "card": false,          // 160px    // Default: false
+  "card-lg": false,       // 240px    // Default: false
+  "mobile": true,         // 320px    // Default: false
+  "mobile-lg": true,      // 480px    // Default: true
+  "tablet": true,         // 640px    // Default: true
+  "tablet-lg": false,     // 880px    // Default: false
+  "desktop": true,        // 1024px   // Default: true
+  "desktop-lg": false,    // 1200px   // Default: false
+  "widescreen": true,     // 1400px   // Default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// 📱 CUSTOM BREAKPOINTS
+// -------------------------------------------------------------------------------------------------
+
+// $theme-utility-breakpoints-custom: ();
+    // Default: () (empty map)
+    // Add custom mobile-first breakpoints with px values
+
+
+// =================================================================================================
+//
+//  UTILITY SETTINGS
+//  Each utility can be configured with these options:
+//  - output: true/false (generate this utility)
+//  - responsive: true/false (generate responsive variants like tablet:margin-1)
+//  - active: true/false (generate :active state variants)
+//  - focus: true/false (generate :focus state variants)
+//  - hover: true/false (generate :hover state variants)
+//  - visited: true/false (generate :visited state variants)
+//
+// =================================================================================================
+
+
+// -------------------------------------------------------------------------------------------------
+// ASPECT RATIO
+// -------------------------------------------------------------------------------------------------
+
+$add-aspect-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// LIST RESET
+// -------------------------------------------------------------------------------------------------
+
+$add-list-reset-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// ALIGN ITEMS
+// -------------------------------------------------------------------------------------------------
+
+$align-items-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// ALIGN SELF
+// -------------------------------------------------------------------------------------------------
+
+$align-self-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// BACKGROUND COLOR
+// -------------------------------------------------------------------------------------------------
+
+$background-color-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: true,               // default: true
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// BORDER
+// -------------------------------------------------------------------------------------------------
+
+$border-settings: (
+  output: true,              // default: true
+  responsive: true,          // default: true
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: true,               // default: true
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// BORDER COLOR
+// -------------------------------------------------------------------------------------------------
+
+$border-color-settings: (
+  output: true,              // default: true
+  responsive: true,          // default: true
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: true,               // default: true
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// BORDER RADIUS
+// -------------------------------------------------------------------------------------------------
+
+$border-radius-settings: (
+  output: true,              // default: true
+  responsive: true,          // default: true
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// BORDER STYLE
+// -------------------------------------------------------------------------------------------------
+
+$border-style-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// BORDER WIDTH
+// -------------------------------------------------------------------------------------------------
+
+$border-width-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// BOTTOM
+// -------------------------------------------------------------------------------------------------
+
+$bottom-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// BOX SHADOW
+// -------------------------------------------------------------------------------------------------
+
+$box-shadow-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: true,               // default: true
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// CIRCLE
+// -------------------------------------------------------------------------------------------------
+
+$circle-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// CLEARFIX
+// -------------------------------------------------------------------------------------------------
+
+$clearfix-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// COLOR
+// -------------------------------------------------------------------------------------------------
+
+$color-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: true,               // default: true
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// CURSOR
+// -------------------------------------------------------------------------------------------------
+
+$cursor-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// DISPLAY
+// -------------------------------------------------------------------------------------------------
+
+$display-settings: (
+  output: true,              // default: true
+  responsive: true,          // default: true
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// FLEX
+// -------------------------------------------------------------------------------------------------
+
+$flex-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// FLEX DIRECTION
+// -------------------------------------------------------------------------------------------------
+
+$flex-direction-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// FLEX WRAP
+// -------------------------------------------------------------------------------------------------
+
+$flex-wrap-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// FLOAT
+// -------------------------------------------------------------------------------------------------
+
+$float-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// FONT
+// -------------------------------------------------------------------------------------------------
+
+$font-settings: (
+  output: true,              // default: true
+  responsive: true,          // default: true
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// FONT FAMILY
+// -------------------------------------------------------------------------------------------------
+
+$font-family-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// FONT FEATURE SETTINGS
+// -------------------------------------------------------------------------------------------------
+
+$font-feature-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// FONT STYLE
+// -------------------------------------------------------------------------------------------------
+
+$font-style-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// FONT WEIGHT
+// -------------------------------------------------------------------------------------------------
+
+$font-weight-settings: (
+  output: true,              // default: true
+  responsive: true,          // default: true
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// HEIGHT
+// -------------------------------------------------------------------------------------------------
+
+$height-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// JUSTIFY CONTENT
+// -------------------------------------------------------------------------------------------------
+
+$justify-content-settings: (
+  output: true,              // default: true
+  responsive: true,          // default: true
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// LEFT
+// -------------------------------------------------------------------------------------------------
+
+$left-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// LETTER SPACING
+// -------------------------------------------------------------------------------------------------
+
+$letter-spacing-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// LINE HEIGHT
+// -------------------------------------------------------------------------------------------------
+
+$line-height-settings: (
+  output: true,              // default: true
+  responsive: true,          // default: true
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// MARGIN
+// -------------------------------------------------------------------------------------------------
+
+$margin-settings: (
+  output: true,              // default: true
+  responsive: true,          // default: true
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// MAX HEIGHT
+// -------------------------------------------------------------------------------------------------
+
+$max-height-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// MAX WIDTH
+// -------------------------------------------------------------------------------------------------
+
+$max-width-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// MEASURE
+// -------------------------------------------------------------------------------------------------
+
+$measure-settings: (
+  output: true,              // default: true
+  responsive: true,          // default: true
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// MIN HEIGHT
+// -------------------------------------------------------------------------------------------------
+
+$min-height-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// MIN WIDTH
+// -------------------------------------------------------------------------------------------------
+
+$min-width-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// OPACITY
+// -------------------------------------------------------------------------------------------------
+
+$opacity-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// ORDER
+// -------------------------------------------------------------------------------------------------
+
+$order-settings: (
+  output: true,              // default: true
+  responsive: true,          // default: true
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// OUTLINE
+// -------------------------------------------------------------------------------------------------
+
+$outline-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: true,               // default: false
+  hover: true,               // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// OUTLINE COLOR
+// -------------------------------------------------------------------------------------------------
+
+$outline-color-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: true,               // default: false
+  hover: true,               // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// OVERFLOW
+// -------------------------------------------------------------------------------------------------
+
+$overflow-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// PADDING
+// -------------------------------------------------------------------------------------------------
+
+$padding-settings: (
+  output: true,              // default: true
+  responsive: true,          // default: true
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// PIN
+// -------------------------------------------------------------------------------------------------
+
+$pin-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// POSITION
+// -------------------------------------------------------------------------------------------------
+
+$position-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// RIGHT
+// -------------------------------------------------------------------------------------------------
+
+$right-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// SQUARE
+// -------------------------------------------------------------------------------------------------
+
+$square-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// TEXT ALIGN
+// -------------------------------------------------------------------------------------------------
+
+$text-align-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// TEXT DECORATION
+// -------------------------------------------------------------------------------------------------
+
+$text-decoration-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: true,               // default: true
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// TEXT DECORATION COLOR
+// -------------------------------------------------------------------------------------------------
+
+$text-decoration-color-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: true,               // default: true
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// TEXT INDENT
+// -------------------------------------------------------------------------------------------------
+
+$text-indent-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// TEXT TRANSFORM
+// -------------------------------------------------------------------------------------------------
+
+$text-transform-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// TOP
+// -------------------------------------------------------------------------------------------------
+
+$top-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// VERTICAL ALIGN
+// -------------------------------------------------------------------------------------------------
+
+$vertical-align-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// WHITE SPACE
+// -------------------------------------------------------------------------------------------------
+
+$whitespace-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// WIDTH
+// -------------------------------------------------------------------------------------------------
+
+$width-settings: (
+  output: true,              // default: true
+  responsive: true,          // default: true
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// -------------------------------------------------------------------------------------------------
+// Z-INDEX
+// -------------------------------------------------------------------------------------------------
+
+$z-index-settings: (
+  output: true,              // default: true
+  responsive: false,         // default: false
+  active: false,             // default: false
+  focus: false,              // default: false
+  hover: false,              // default: false
+  visited: false,            // default: false
+);
+
+
+// =================================================================================================
+//
+//  COLOR PALETTES
+//  Control which color values are available for color-based utilities.
+//
+// =================================================================================================
+
+
+// -------------------------------------------------------------------------------------------------
+// GLOBAL COLOR PALETTES
+// -------------------------------------------------------------------------------------------------
+// These palettes are added to:
+// - background-color
+// - border-color
+// - color
+// - text-decoration-color
+// -------------------------------------------------------------------------------------------------
+
+$global-color-palettes: ("palette-color-default");
+
+
+// -------------------------------------------------------------------------------------------------
+// INDIVIDUAL PALETTE VALUES
+// -------------------------------------------------------------------------------------------------
+// Configure palettes for specific utilities
+// -------------------------------------------------------------------------------------------------
+
+// Aspect
+$add-aspect-palettes: ("palette-add-aspect-default");
+$add-aspect-manual-values: ();
+
+// Align items
+$align-items-palettes: ("palette-align-items-default");
+$align-items-manual-values: ();
+
+// Align self
+$align-self-palettes: ("palette-align-self-default");
+$align-self-manual-values: ();
+
+// Background color
+$background-color-palettes: ();      // See Global colors
+$background-color-manual-values: ();
+
+// Border
+$border-palettes: ("palette-border-default");
+$border-manual-values: ();
+
+// Border color
+$border-color-palettes: ();          // See Global colors
+$border-color-manual-values: ();
+
+// Border radius
+$border-radius-palettes: ("palette-border-radius-default");
+$border-radius-manual-values: ();
+
+// Border style
+$border-style-palettes: ("palette-border-style-default");
+$border-style-manual-values: ();
+
+// Border width
+$border-width-palettes: ("palette-border-width-default");
+$border-width-manual-values: ();
+
+// Bottom
+$bottom-palettes: ("palette-bottom-default");
+$bottom-manual-values: ();
+
+// Box shadow
+$box-shadow-palettes: ("palette-box-shadow-default");
+$box-shadow-manual-values: ();
+
+// Circle
+$circle-palettes: ("palette-circle-default");
+$circle-manual-values: ();
+
+// Color
+$color-palettes: ();                 // See Global colors
+$color-manual-values: ();
+
+// Cursor
+$cursor-palettes: ("palette-cursor-default");
+$cursor-manual-values: ();
+
+// Display
+$display-palettes: ("palette-display-default");
+$display-manual-values: ();
+
+// Flex
+$flex-palettes: ("palette-flex-default");
+$flex-manual-values: ();
+
+// Flex direction
+$flex-direction-palettes: ("palette-flex-direction-default");
+$flex-direction-manual-values: ();
+
+// Flex wrap
+$flex-wrap-palettes: ("palette-flex-wrap-default");
+$flex-wrap-manual-values: ();
+
+// Float
+$float-palettes: ("palette-float-default");
+$float-manual-values: ();
+
+// Font
+$font-palettes: ("palette-font-default");
+$font-manual-values: ();
+
+// Font family
+$font-family-palettes: ("palette-font-family-default");
+$font-family-manual-values: ();
+
+// Font feature settings
+$font-feature-palettes: ("palette-font-feature-settings-default");
+$font-feature-manual-values: ();
+
+// Font style
+$font-style-palettes: ("palette-font-style-default");
+$font-style-manual-values: ();
+
+// Font weight
+$font-weight-palettes: ("palette-font-weight-default");
+$font-weight-manual-values: ();
+
+// Height
+$height-palettes: ("palette-height-default");
+$height-manual-values: ();
+
+// Justify content
+$justify-content-palettes: ("palette-justify-content-default");
+$justify-content-manual-values: ();
+
+// Left
+$left-palettes: ("palette-left-default");
+$left-manual-values: ();
+
+// Letter spacing
+$letter-spacing-palettes: ("palette-letter-spacing-default");
+$letter-spacing-manual-values: ();
+
+// Line height
+$line-height-palettes: ("palette-line-height-default");
+$line-height-manual-values: ();
+
+// Margin
+$margin-palettes: ("palette-margin-default");
+$margin-manual-values: ();
+
+// Margin vertical
+$margin-vertical-palettes: ("palette-margin-vertical-default");
+$margin-vertical-manual-values: ();
+
+// Margin horizontal
+$margin-horizontal-palettes: ("palette-margin-horizontal-default");
+$margin-horizontal-manual-values: ();
+
+// Max height
+$max-height-palettes: ("palette-max-height-default");
+$max-height-manual-values: ();
+
+// Max width
+$max-width-palettes: ("palette-max-width-default");
+$max-width-manual-values: ();
+
+// Measure
+$measure-palettes: ("palette-measure-default");
+$measure-manual-values: ();
+
+// Min height
+$min-height-palettes: ("palette-min-height-default");
+$min-height-manual-values: ();
+
+// Min width
+$min-width-palettes: ("palette-min-width-default");
+$min-width-manual-values: ();
+
+// Opacity
+$opacity-palettes: ("palette-opacity-default");
+$opacity-manual-values: ();
+
+// Order
+$order-palettes: ("palette-order-default");
+$order-manual-values: ();
+
+// Outline
+$outline-palettes: ("palette-outline-default");
+$outline-manual-values: ();
+
+// Outline color
+$outline-color-palettes: ("palette-outline-color-default");
+$outline-color-manual-values: ();
+
+// Overflow
+$overflow-palettes: ("palette-overflow-default");
+$overflow-manual-values: ();
+
+// Padding
+$padding-palettes: ("palette-padding-default");
+$padding-manual-values: ();
+
+// Position
+$position-palettes: ("palette-position-default");
+$position-manual-values: ();
+
+// Right
+$right-palettes: ("palette-right-default");
+$right-manual-values: ();
+
+// Square
+$square-palettes: ("palette-square-default");
+$square-manual-values: ();
+
+// Text align
+$text-align-palettes: ("palette-text-align-default");
+$text-align-manual-values: ();
+
+// Text decoration
+$text-decoration-palettes: ("palette-text-decoration-default");
+$text-decoration-manual-values: ();
+
+// Text decoration color
+$text-decoration-color-palettes: ();      // See Global colors
+$text-decoration-color-manual-values: ();
+
+// Text indent
+$text-indent-palettes: ("palette-text-indent-default");
+$text-indent-manual-values: ();
+
+// Text transform
+$text-transform-palettes: ("palette-text-transform-default");
+$text-transform-manual-values: ();
+
+// Top
+$top-palettes: ("palette-top-default");
+$top-manual-values: ();
+
+// Vertical align
+$vertical-align-palettes: ("palette-vertical-align-default");
+$vertical-align-manual-values: ();
+
+// White space
+$whitespace-palettes: ("palette-white-space-default");
+$whitespace-manual-values: ();
+
+// Width
+$width-palettes: ("palette-width-default");
+$width-manual-values: ();
+
+// Z-index
+$z-index-palettes: ("palette-z-index-default");
+$z-index-manual-values: ();

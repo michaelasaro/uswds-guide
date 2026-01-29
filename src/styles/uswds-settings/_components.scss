@@ -1,0 +1,780 @@
+// =================================================================================================
+//
+//   ██████╗ ██████╗ ███╗   ███╗██████╗  ██████╗ ███╗   ██╗███████╗███╗   ██╗████████╗███████╗
+//  ██╔════╝██╔═══██╗████╗ ████║██╔══██╗██╔═══██╗████╗  ██║██╔════╝████╗  ██║╚══██╔══╝██╔════╝
+//  ██║     ██║   ██║██╔████╔██║██████╔╝██║   ██║██╔██╗ ██║█████╗  ██╔██╗ ██║   ██║   ███████╗
+//  ██║     ██║   ██║██║╚██╔╝██║██╔═══╝ ██║   ██║██║╚██╗██║██╔══╝  ██║╚██╗██║   ██║   ╚════██║
+//  ╚██████╗╚██████╔╝██║ ╚═╝ ██║██║     ╚██████╔╝██║ ╚████║███████╗██║ ╚████║   ██║   ███████║
+//   ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═══╝   ╚═╝   ╚══════╝
+//
+//  COMPONENT SETTINGS
+//  Customize the appearance of individual USWDS components.
+//
+//  📖 Learn more: https://designsystem.digital.gov/components/overview/
+//
+// =================================================================================================
+//
+//  ✏️  HOW TO CUSTOMIZE:
+//      1. Find the setting you want to change below
+//      2. Uncomment it (remove the //) and set your value
+//      3. Uncomment the matching line in _bridge.scss
+//
+//      That's it! Both files have all settings pre-written - just uncomment to activate.
+//
+// =================================================================================================
+
+
+// -------------------------------------------------------------------------------------------------
+// 🎵 ACCORDION
+// -------------------------------------------------------------------------------------------------
+
+// $theme-accordion-background-color: default;
+    // Default: default
+    // Background color of the accordion content
+
+// $theme-accordion-border-width: 0.5;
+    // Default: 0.5
+    // Border width of the bordered accordion
+
+// $theme-accordion-border-color: "base-lightest";
+    // Default: "base-lightest"
+    // Border color of the bordered accordion
+
+// $theme-accordion-button-background-color: "base-lightest";
+    // Default: "base-lightest"
+    // Background color of the accordion button
+
+// $theme-accordion-font-family: "body";
+    // Default: "body"
+    // Font family of the accordion
+
+
+// -------------------------------------------------------------------------------------------------
+// 🔔 ALERT
+// -------------------------------------------------------------------------------------------------
+
+// $theme-alert-bar-width: 1;
+    // Default: 1
+    // Width of the colored bar to the left of the alert
+
+// $theme-alert-font-family: "ui";
+    // Default: "ui"
+    // Font family of the alert
+
+// $theme-alert-icon-size: 4;
+    // Default: 4
+    // Size of the alert icon
+
+// $theme-alert-padding-x: 2.5;
+    // Default: 2.5
+    // Padding on the left and right of the alert
+
+// $theme-alert-padding-y: 2;
+    // Default: 2
+    // Padding on the top and bottom of the alert
+
+// $theme-alert-text-color: default;
+    // Default: default
+    // Text color on light backgrounds
+
+// $theme-alert-link-color: default;
+    // Default: default
+    // Link color on light backgrounds
+
+// $theme-alert-text-reverse-color: default;
+    // Default: default
+    // Text color on dark backgrounds
+
+// $theme-alert-link-reverse-color: default;
+    // Default: default
+    // Link color on dark backgrounds
+
+
+// -------------------------------------------------------------------------------------------------
+// 🏳️ BANNER
+// -------------------------------------------------------------------------------------------------
+
+$theme-banner-background-color: "primary-light";
+    // Default: "base-lightest"
+    // Background color of the banner and its content
+
+// $theme-banner-font-family: "ui";
+    // Default: "ui"
+    // The font family of the banner
+
+$theme-banner-link-color: "white";
+    // Default: default
+    // The color of banner links
+
+$theme-banner-max-width: "widescreen";
+    // Default: "desktop"
+    // Maximum width of the banner content
+
+
+// -------------------------------------------------------------------------------------------------
+// 🍞 BREADCRUMB
+// -------------------------------------------------------------------------------------------------
+
+// $theme-breadcrumb-background-color: default;
+    // Default: default
+    // Background color of the breadcrumb bar
+
+// $theme-breadcrumb-font-family: "body";
+    // Default: "body"
+    // Font family of the breadcrumb text
+
+// $theme-breadcrumb-font-size: "sm";
+    // Default: "sm"
+    // Size of the breadcrumb text
+
+// $theme-breadcrumb-link-color: default;
+    // Default: default
+    // Color of breadcrumb links
+
+// $theme-breadcrumb-min-width: "mobile-lg";
+    // Default: "mobile-lg"
+    // Width at which full breadcrumb displays
+
+// $theme-breadcrumb-padding-bottom: 2;
+    // Default: 2
+    // Padding below the breadcrumb
+
+// $theme-breadcrumb-padding-top: 2;
+    // Default: 2
+    // Padding above the breadcrumb
+
+// $theme-breadcrumb-padding-x: 0;
+    // Default: 0
+    // Padding to the right and left
+
+// $theme-breadcrumb-separator-color: "base";
+    // Default: "base"
+    // Color of the breadcrumb separator
+
+
+// -------------------------------------------------------------------------------------------------
+// 🔘 BUTTON
+// -------------------------------------------------------------------------------------------------
+
+// $theme-button-border-radius: "md";
+    // Default: "md"
+    // Button border radius for rounded corners
+
+// $theme-button-font-family: "ui";
+    // Default: "ui"
+    // Font family of the button
+
+// $theme-button-icon-gap: 1;
+    // Default: 1
+    // Size of the gap between button text and icon
+
+// $theme-button-small-width: 6;
+    // Default: 6
+    // Width of small buttons
+
+// $theme-button-stroke-width: 2px;
+    // Default: 2px
+    // Stroke width of outline button variants
+
+
+// -------------------------------------------------------------------------------------------------
+// 🎴 CARD
+// -------------------------------------------------------------------------------------------------
+
+$theme-card-border-color: "primary-light";
+    // Default: "base-lighter"
+    // Stroke color of card
+
+$theme-card-border-radius: "lg";
+    // Default: "lg"
+    // Border radius of card
+
+$theme-card-border-width: 2px;
+    // Default: 2px
+    // Stroke thickness of card
+
+// $theme-card-gap: 2;
+    // Default: 2
+    // Gap between cards in a card group
+
+// $theme-card-flag-min-width: "tablet";
+    // Default: "tablet"
+    // Width at which flag cards change to horizontal
+
+// $theme-card-flag-image-width: "card-lg";
+    // Default: "card-lg"
+    // Fixed image width in the card flag variant
+
+// $theme-card-font-family: "body";
+    // Default: "body"
+    // Font family for card body
+
+// $theme-card-header-typeset: ("heading", "lg", 2);
+    // Default: ("heading", "lg", 2)
+    // Family, size, and line height of the heading
+
+// $theme-card-margin-bottom: 4;
+    // Default: 4
+    // Bottom margin for card
+
+// $theme-card-padding-perimeter: 3;
+    // Default: 3
+    // Padding between card elements and border
+
+// $theme-card-padding-y: 2;
+    // Default: 2
+    // Vertical padding between card elements
+
+
+// -------------------------------------------------------------------------------------------------
+// ☑️ CHECKBOX
+// -------------------------------------------------------------------------------------------------
+
+// $theme-checkbox-border-radius: "sm";
+    // Default: "sm"
+    // Checkbox border radius for rounded corners
+
+
+// -------------------------------------------------------------------------------------------------
+// 📚 COLLECTION
+// -------------------------------------------------------------------------------------------------
+
+// $theme-collection-font-family: "ui";
+    // Default: "ui"
+    // Font family for collection body
+
+// $theme-collection-header-typeset: ("ui", "md", 3);
+    // Default: ("ui", "md", 3)
+    // Family, size, and line height of the heading
+
+
+// -------------------------------------------------------------------------------------------------
+// 🦶 FOOTER
+// -------------------------------------------------------------------------------------------------
+
+// $theme-footer-font-family: "body";
+    // Default: "body"
+    // Font family of the footer
+
+$theme-footer-max-width: "widescreen";
+    // Default: "desktop"
+    // Maximum width of footer container
+
+
+// -------------------------------------------------------------------------------------------------
+// 📝 FORM
+// -------------------------------------------------------------------------------------------------
+
+// $theme-form-font-family: "ui";
+    // Default: "ui"
+    // Font family of the form
+
+
+// -------------------------------------------------------------------------------------------------
+// 📌 HEADER
+// -------------------------------------------------------------------------------------------------
+
+// $theme-header-font-family: "ui";
+    // Default: "ui"
+    // Font family of the header
+
+$theme-header-logo-text-width: 38%;
+    // Default: 33%
+    // Width of the logo text area at desktop width
+
+$theme-header-max-width: "widescreen";
+    // Default: "desktop"
+    // Maximum width of the header
+
+// $theme-header-min-width: "desktop";
+    // Default: "desktop"
+    // Breakpoint at which non-mobile header is shown
+
+
+// -------------------------------------------------------------------------------------------------
+// 🦸 HERO
+// -------------------------------------------------------------------------------------------------
+
+$theme-hero-image: "/dist/fpac-style/images/hero/farmersgov-1440x540-finlitmo-hero.jpg";
+    // Default: "#{$theme-image-path}/hero.png"
+    // Background image for the hero (path relative to compiled CSS)
+
+
+// -------------------------------------------------------------------------------------------------
+// 📋 ICON LIST
+// -------------------------------------------------------------------------------------------------
+
+// $theme-icon-list-font-family: "body";
+    // Default: "body"
+    // Font family of the content text
+
+// $theme-icon-list-title-font-family: "heading";
+    // Default: "heading"
+    // Font family of the content title
+
+
+// -------------------------------------------------------------------------------------------------
+// 🪪 IDENTIFIER
+// -------------------------------------------------------------------------------------------------
+
+// $theme-identifier-background-color: "base-darkest";
+    // Default: "base-darkest"
+    // Background color of the identifier
+
+// $theme-identifier-font-family: "ui";
+    // Default: "ui"
+    // Font family of the identifier
+
+// $theme-identifier-identity-domain-color: "base-light";
+    // Default: "base-light"
+    // Color of your domain text in the masthead
+
+$theme-identifier-max-width: "widescreen";
+    // Default: "desktop"
+    // Maximum width of the identifier content
+
+// $theme-identifier-primary-link-color: default;
+    // Default: default
+    // Color of links in the masthead section
+
+// $theme-identifier-secondary-link-color: "base-light";
+    // Default: "base-light"
+    // Color of links in the required links section
+
+
+// -------------------------------------------------------------------------------------------------
+// 📑 IN-PAGE NAVIGATION
+// -------------------------------------------------------------------------------------------------
+
+// $theme-in-page-nav-background-color: "default";
+    // Default: "default"
+    // Background color of the in-page navigation block
+
+// $theme-in-page-nav-background-padding: 2;
+    // Default: 2
+    // Padding of the in-page navigation block
+
+// $theme-in-page-nav-background-radius: "lg";
+    // Default: "lg"
+    // Border radius of the in-page navigation block
+
+// $theme-in-page-nav-bar-color: "default";
+    // Default: "default"
+    // Color of the bar representing the active state
+
+// $theme-in-page-nav-bar-width: "05";
+    // Default: "05"
+    // Width of the active state bar
+
+// $theme-in-page-nav-font-family: "ui";
+    // Default: "ui"
+    // Font family of the in-page navigation
+
+$theme-in-page-nav-link-color: "primary-dark";
+    // Default: "default"
+    // Color of the in-page navigation links
+
+$theme-in-page-nav-main-content-max-width: "widescreen";
+    // Default: "desktop"
+    // Maximum width of the main element
+
+// $theme-in-page-nav-margin-left: 4;
+    // Default: 4
+    // Margin to the left of in-page navigation
+
+// $theme-in-page-nav-margin-top: 2.5;
+    // Default: 2.5
+    // Margin above in-page navigation
+
+// $theme-in-page-nav-top: 4;
+    // Default: 4
+    // Distance from top of page when sticky position engaged
+
+
+// -------------------------------------------------------------------------------------------------
+// 📝 INPUT & RADIO BUTTONS
+// -------------------------------------------------------------------------------------------------
+
+// $theme-input-background-color: default;
+    // Default: default
+    // Background color for radio and checkbox inputs
+
+// $theme-input-line-height: 3;
+    // Default: 3
+    // Line-height of input element
+
+// $theme-input-max-width: "mobile-lg";
+    // Default: "mobile-lg"
+    // Max width of the input element
+
+// $theme-input-select-border-width: 2px;
+    // Default: 2px
+    // Border width of selection elements
+
+// $theme-input-select-size: 2.5;
+    // Default: 2.5
+    // Height and width of checkboxes and radio buttons
+
+// $theme-input-state-border-width: 0.5;
+    // Default: 0.5
+    // Border width of special state inputs (like error)
+
+// $theme-input-tile-border-radius: "md";
+    // Default: "md"
+    // Tile border radius for rounded corners
+
+// $theme-input-tile-border-width: "2px";
+    // Default: "2px"
+    // Tile border thickness
+
+
+// -------------------------------------------------------------------------------------------------
+// 🔗 LINK (EXTERNAL)
+// -------------------------------------------------------------------------------------------------
+
+// $theme-external-link-sr-label-tab-new: "External, opens in a new tab.";
+    // Default: "External, opens in a new tab."
+    // Screen reader label for external links that open in new tabs
+
+// $theme-external-link-sr-label-tab-same: "External.";
+    // Default: "External."
+    // Screen reader label for external links in current tab
+
+
+// -------------------------------------------------------------------------------------------------
+// 🪟 MODAL
+// -------------------------------------------------------------------------------------------------
+
+// $theme-modal-border-radius: "lg";
+    // Default: "lg"
+    // Border radius of the modal window
+
+// $theme-modal-default-max-width: "mobile-lg";
+    // Default: "mobile-lg"
+    // Maximum width of default modal window
+
+// $theme-modal-lg-content-max-width: "tablet";
+    // Default: "tablet"
+    // Maximum width of content in large modal
+
+// $theme-modal-lg-max-width: "tablet-lg";
+    // Default: "tablet-lg"
+    // Maximum width of large modal window
+
+
+// -------------------------------------------------------------------------------------------------
+// 🧭 NAVIGATION
+// -------------------------------------------------------------------------------------------------
+
+// $theme-navigation-font-family: "ui";
+    // Default: "ui"
+    // Font family of the navigation
+
+// $theme-megamenu-columns: 3;
+    // Default: 3
+    // Number of columns in the megamenu
+
+
+// -------------------------------------------------------------------------------------------------
+// 📄 PAGINATION
+// -------------------------------------------------------------------------------------------------
+
+// $theme-pagination-background-color: "default";
+    // Default: "default"
+    // Background color of pagination component
+
+// $theme-pagination-breakpoint: "tablet";
+    // Default: "tablet"
+    // Breakpoint at which full pagination displays
+
+// $theme-pagination-button-border-radius: "md";
+    // Default: "md"
+    // Default pagination button border radius
+
+// $theme-pagination-button-border-width: 1px;
+    // Default: 1px
+    // Width of button border
+
+// $theme-pagination-font-family: "ui";
+    // Default: "ui"
+    // Default font family for pagination
+
+
+// -------------------------------------------------------------------------------------------------
+// 📋 PROCESS LIST
+// -------------------------------------------------------------------------------------------------
+
+// $theme-process-list-counter-background-color: "white";
+    // Default: "white"
+    // Background color of the counter circle
+
+// $theme-process-list-counter-border-color: "ink";
+    // Default: "ink"
+    // Color of the border around the counter
+
+// $theme-process-list-counter-border-width: 0.5;
+    // Default: 0.5
+    // Size of the border around the counter
+
+// $theme-process-list-counter-font-family: "ui";
+    // Default: "ui"
+    // Font family of the counter text
+
+// $theme-process-list-counter-font-size: "lg";
+    // Default: "lg"
+    // Font size of the counter text
+
+// $theme-process-list-counter-gap-color: "white";
+    // Default: "white"
+    // Color of gap between counter and connector
+
+// $theme-process-list-counter-gap-width: 0.5;
+    // Default: 0.5
+    // Size of gap between counter and connector
+
+// $theme-process-list-counter-size: 5;
+    // Default: 5
+    // Size of the counter circle
+
+// $theme-process-list-counter-text-color: "ink";
+    // Default: "ink"
+    // Color of the number text inside the counter
+
+// $theme-process-list-connector-color: "primary-lighter";
+    // Default: "primary-lighter"
+    // Color of the connector line
+
+// $theme-process-list-connector-width: 1;
+    // Default: 1
+    // Width of the connector line
+
+// $theme-process-list-font-family: "ui";
+    // Default: "ui"
+    // Font family of the content text
+
+// $theme-process-list-font-size: "sm";
+    // Default: "sm"
+    // Font size of the content text
+
+// $theme-process-list-heading-color: "ink";
+    // Default: "ink"
+    // Color of the heading text
+
+// $theme-process-list-heading-font-family: "ui";
+    // Default: "ui"
+    // Font family of the heading text
+
+// $theme-process-list-heading-font-size: "lg";
+    // Default: "lg"
+    // Font size of the heading text
+
+
+// -------------------------------------------------------------------------------------------------
+// 🔍 SEARCH
+// -------------------------------------------------------------------------------------------------
+
+// $theme-search-font-family: "ui";
+    // Default: "ui"
+    // Font family of the search
+
+// $theme-search-min-width: 27ch;
+    // Default: 27ch
+    // Min-width of the search input
+
+
+// -------------------------------------------------------------------------------------------------
+// 📑 SIDENAV
+// -------------------------------------------------------------------------------------------------
+
+// $theme-sidenav-current-border-width: 0.5;
+    // Default: 0.5
+    // Width of the current section indicator
+
+// $theme-sidenav-font-family: "ui";
+    // Default: "ui"
+    // Font family of the side navigation
+
+
+// -------------------------------------------------------------------------------------------------
+// 🚨 SITE ALERT
+// -------------------------------------------------------------------------------------------------
+
+$theme-site-alert-max-width: "widescreen";
+    // Default: "desktop"
+    // Maximum width of the site alert content
+
+
+// -------------------------------------------------------------------------------------------------
+// 📊 STEP INDICATOR
+// -------------------------------------------------------------------------------------------------
+
+// $theme-step-indicator-background-color: "white";
+    // Default: "white"
+    // Background color of the component
+
+// $theme-step-indicator-counter-gap: 0.5;
+    // Default: 0.5
+    // Gap between the counter and the segment
+
+// $theme-step-indicator-counter-border-width: 0.5;
+    // Default: 0.5
+    // Size of the border around pending steps
+
+// $theme-step-indicator-font-family: "ui";
+    // Default: "ui"
+    // Font family of labels and counter numbers
+
+// $theme-step-indicator-heading-font-family: "ui";
+    // Default: "ui"
+    // Font family of the heading
+
+// $theme-step-indicator-heading-color: "ink";
+    // Default: "ink"
+    // Color of the heading
+
+// $theme-step-indicator-heading-font-size: "lg";
+    // Default: "lg"
+    // Font size of heading on large screens
+
+// $theme-step-indicator-heading-font-size-small: "md";
+    // Default: "md"
+    // Font size of heading on small screens
+
+// $theme-step-indicator-label-font-size: "sm";
+    // Default: "sm"
+    // Font size of segment labels
+
+// $theme-step-indicator-min-width: "tablet";
+    // Default: "tablet"
+    // Width at which large-width features display
+
+// $theme-step-indicator-segment-color-pending: "gray-40";
+    // Default: "gray-40"
+    // Color of pending step segments
+
+// $theme-step-indicator-segment-color-complete: "primary-darker";
+    // Default: "primary-darker"
+    // Color of complete step segments
+
+// $theme-step-indicator-segment-color-current: "primary";
+    // Default: "primary"
+    // Color of the current step segment
+
+// $theme-step-indicator-segment-gap: 2px;
+    // Default: 2px
+    // Gap between step segments
+
+// $theme-step-indicator-segment-height: 1;
+    // Default: 1
+    // Height of the step segment
+
+// $theme-step-indicator-text-pending-color: "base-dark";
+    // Default: "base-dark"
+    // Text color of pending steps
+
+
+// -------------------------------------------------------------------------------------------------
+// 📦 SUMMARY BOX
+// -------------------------------------------------------------------------------------------------
+
+// $theme-summary-box-background-color: "info-lighter";
+    // Default: "info-lighter"
+    // Background color of the Summary box
+
+// $theme-summary-box-border-color: "info-light";
+    // Default: "info-light"
+    // Color of the border around the Summary box
+
+// $theme-summary-box-border-width: 1px;
+    // Default: 1px
+    // Width of the border
+
+// $theme-summary-box-border-radius: "md";
+    // Default: "md"
+    // Border radius of the summary box
+
+// $theme-summary-box-font-family: "ui";
+    // Default: "ui"
+    // Font family of the content text
+
+// $theme-summary-box-link-color: default;
+    // Default: default
+    // Color of the links inside the content
+
+// $theme-summary-box-text-color: default;
+    // Default: default
+    // Color of the content text
+
+
+// -------------------------------------------------------------------------------------------------
+// 📊 TABLE
+// -------------------------------------------------------------------------------------------------
+
+// $theme-table-background-color: default;
+    // Default: default
+    // Table background color
+
+// $theme-table-border-color: "ink";
+    // Default: "ink"
+    // Border color for table cells
+
+$theme-table-header-background-color: "secondary-lighter";
+    // Default: "base-lighter"
+    // Background color for header cells
+
+// $theme-table-header-text-color: default;
+    // Default: default
+    // Text color for header cells
+
+// $theme-table-sorted-background-color: "accent-cool-lighter";
+    // Default: "accent-cool-lighter"
+    // Background color for sorted column cells
+
+// $theme-table-sorted-header-background-color: "accent-cool-light";
+    // Default: "accent-cool-light"
+    // Background color for sorted column header
+
+// $theme-table-sorted-icon-color: default;
+    // Default: default
+    // Fill color for the activated sort button
+
+// $theme-table-sorted-stripe-background-color: "blue-cool-10v";
+    // Default: "blue-cool-10v"
+    // Background color for sorted column stripes
+
+// $theme-table-sticky-top-offset: -1px;
+    // Default: -1px
+    // Top offset for sticky headers
+
+// $theme-table-stripe-background-color: "base-lightest";
+    // Default: "base-lightest"
+    // Background color for alternating stripes
+
+// $theme-table-stripe-text-color: default;
+    // Default: default
+    // Text color for alternating stripes
+
+// $theme-table-text-color: default;
+    // Default: default
+    // Text color for table cells
+
+// $theme-table-unsorted-icon-color: "base";
+    // Default: "base"
+    // Fill color for unactivated sort button
+
+
+// -------------------------------------------------------------------------------------------------
+// 💬 TOOLTIP
+// -------------------------------------------------------------------------------------------------
+
+// $theme-tooltip-background-color: "ink";
+    // Default: "ink"
+    // Background color of tooltip
+
+// $theme-tooltip-font-color: "base-lightest";
+    // Default: "base-lightest"
+    // Text color of tooltip
+
+// $theme-tooltip-font-size: "xs";
+    // Default: "xs"
+    // Font size of tooltip

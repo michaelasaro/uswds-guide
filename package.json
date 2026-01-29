@@ -4,7 +4,7 @@
   "description": "Comprehensive USWDS documentation site",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf dist work",
+    "clean": "rm -rf dist",
     "build": "npm run clean && npx gulp buildAll",
     "build:styles": "npx gulp sassCompile",
     "serve": "nodemon server.js"

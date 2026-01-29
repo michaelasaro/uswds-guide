@@ -1,0 +1,129 @@
+// =================================================================================================
+//
+//  ███████╗██████╗  █████╗  ██████╗██╗███╗   ██╗ ██████╗
+//  ██╔════╝██╔══██╗██╔══██╗██╔════╝██║████╗  ██║██╔════╝
+//  ███████╗██████╔╝███████║██║     ██║██╔██╗ ██║██║  ███╗
+//  ╚════██║██╔═══╝ ██╔══██║██║     ██║██║╚██╗██║██║   ██║
+//  ███████║██║     ██║  ██║╚██████╗██║██║ ╚████║╚██████╔╝
+//  ╚══════╝╚═╝     ╚═╝  ╚═╝ ╚═════╝╚═╝╚═╝  ╚═══╝ ╚═════╝
+//
+//  SPACING SETTINGS
+//  Configure border radius, column gaps, grid containers, and site margins.
+//
+//  📖 Learn more: https://designsystem.digital.gov/design-tokens/spacing-units/
+//
+// =================================================================================================
+//
+//  ✏️  HOW TO CUSTOMIZE:
+//      1. Find the setting you want to change below
+//      2. Uncomment it (remove the //) and set your value
+//      3. Uncomment the matching line in _bridge.scss
+//
+//      That's it! Both files have all settings pre-written - just uncomment to activate.
+//
+// =================================================================================================
+//
+//  SPACING UNIT REFERENCE:
+//  -----------------------
+//  2px         2px
+//  0.5         4px
+//  1           8px
+//  1.5         12px
+//  2           16px
+//  2.5         20px
+//  3           24px
+//  4           32px
+//  5           40px
+//  6           48px
+//  7           56px
+//  8           64px
+//  9           72px
+//
+// =================================================================================================
+
+
+// -------------------------------------------------------------------------------------------------
+// 📐 BORDER RADIUS
+// -------------------------------------------------------------------------------------------------
+// Control the roundness of corners throughout your site.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-border-radius-sm: 2px;
+    // Default: 2px
+    // Sets "sm" border-radius theme token
+
+// $theme-border-radius-md: 0.5;
+    // Default: 0.5 (4px)
+    // Sets "md" border-radius theme token
+
+// $theme-border-radius-lg: 1;
+    // Default: 1 (8px)
+    // Sets "lg" border-radius theme token
+
+
+// -------------------------------------------------------------------------------------------------
+// 📊 COLUMN GAP
+// -------------------------------------------------------------------------------------------------
+// Gap between columns in grid layouts.
+// -------------------------------------------------------------------------------------------------
+
+// $theme-column-gap-sm: 2px;
+    // Default: 2px
+    // Sets "grid-gap-sm" token
+
+// $theme-column-gap-md: 2;
+    // Default: 2 (16px)
+    // Sets "grid-gap-md" token
+
+// $theme-column-gap-lg: 3;
+    // Default: 3 (24px)
+    // Sets "grid-gap-lg" token
+
+// $theme-column-gap-mobile: 2;
+    // Default: 2 (16px)
+    // Sets gap size of "grid-gap" at mobile width
+
+// $theme-column-gap-desktop: 4;
+    // Default: 4 (32px)
+    // Sets gap size of "grid-gap" at desktop width
+
+
+// -------------------------------------------------------------------------------------------------
+// 📦 GRID CONTAINER MAX-WIDTH
+// -------------------------------------------------------------------------------------------------
+// Maximum width of grid containers.
+// -------------------------------------------------------------------------------------------------
+//
+// WIDTH OPTIONS:
+// - "mobile"      320px
+// - "mobile-lg"   480px
+// - "tablet"      640px
+// - "tablet-lg"   880px
+// - "desktop"     1024px
+// - "desktop-lg"  1200px
+// - "widescreen"  1400px
+//
+// -------------------------------------------------------------------------------------------------
+
+$theme-grid-container-max-width: "widescreen";
+    // Default: "desktop"
+    // Sets the max-width value of the .grid-container utility
+
+
+// -------------------------------------------------------------------------------------------------
+// 📏 SITE MARGINS
+// -------------------------------------------------------------------------------------------------
+// Outer margins of your site content.
+// -------------------------------------------------------------------------------------------------
+
+$theme-site-margins-breakpoint: "widescreen";
+    // Default: "desktop"
+    // The breakpoint at which the site's outer margin changes
+
+$theme-site-margins-width: 4;
+    // Default: 4 (32px)
+    // Site outer margin at non-mobile width
+
+$theme-site-margins-mobile-width: 2;
+    // Default: 2 (16px)
+    // Site outer margin at mobile width
