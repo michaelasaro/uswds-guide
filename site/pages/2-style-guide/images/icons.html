@@ -1,0 +1,693 @@
+<html lang="en">
+  <!-- Head Start -->
+    <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <!-- Set character encoding so that all characters within the UTF-8 space (such as emoji) render correctly. -->
+    <meta charset="utf-8">
+
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Base URL
+    ================================================== -->
+    <!-- Set the base URL for all relative URLs within the document
+    <base href="/site/"> -->
+
+    <!-- Page Title
+    ================================================== -->
+    <title>Icons | Civic</title>
+
+    <!-- Favicon
+    ================================================== -->
+    <!-- Light and dark mode favicons -->
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="/site/images/civic-logo/civic-favicon-white.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- CSS Links
+    ================================================== -->
+    <link rel="stylesheet" href="/dist/civic/styles/civic.css">
+    <link rel="stylesheet" href="/site/styles/civic-documentation-website.css">
+
+    <!-- USWDS INIT
+    ================================================== -->
+    <script src="/dist/uswds/js/uswds-init.min.js" type="module"></script>
+    <link rel="preload" href="/dist/uswds/js/uswds.min.js" as="script">
+
+    </head>
+  <!-- Head End -->
+
+  <!-- Body Start
+  ================================================== -->
+    <body>
+
+    <!-- Banner -->
+      <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+      <section class="usa-banner" aria-label="Welcome to the Civic Design System">
+          <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+              <div class="grid-col-auto">
+                <img aria-hidden="true" class="usa-banner__header-flag" src="/dist/uswds/img/us_flag_small.png" alt=""/>
+              </div>
+              <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                <p class="usa-banner__header-text">Welcome to the Civic Design System</p>
+              </div>
+            </div>
+          </header>
+      </section>
+
+      <!-- Header Start -->
+        <header class="usa-header usa-header--basic">
+          <div class="usa-nav-container">
+
+            <div class="usa-navbar">
+
+            <!-- Civic Logo -->
+            <div class="usa-logo">
+              <div class="grid-container">
+                <div style="display: inline-flex; align-items: center;">
+                  <a href="/" title="Civic Logo"><img src="/site/images/civic-logo/civic-favicon.svg" style="width: 50px; min-width: 50px; margin-right: 8px;" alt="Civic Logo"/></a>
+                  <a href="/" title="Website title" style="white-space: nowrap;"><strong>Civic Design System</strong></a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Mobile menu button -->
+              <button type="button" class="usa-menu-btn">Menu</button>
+            </div>
+
+            <!-- Primary Navigation Start -->
+              <nav aria-label="Primary navigation" class="usa-nav">
+
+                <!-- Mobile close button -->
+                  <button type="button" class="usa-nav__close">
+                    <img src="/dist/uswds/img/usa-icons/close.svg" role="img" alt="Close"/>
+                  </button>
+
+                <!-- Primary Menu Start -->
+                  <ul class="usa-nav__primary usa-accordion margin-right-4">
+
+                    <!-- Home -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/" class="font-sans-xs usa-nav-link">
+                      <span style="white-space: nowrap;">Home</span>
+                      </a>
+                    </li>
+
+                    <!-- Style Guide -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/2-style-guide/style-guide.html" class="font-sans-xs usa-nav-link usa-current">
+                        <span style="white-space: nowrap;">Style Guide</span>
+                      </a>
+                    </li>
+
+                    <!-- Component Library -->
+                    <li class="usa-nav__primary-item">
+                      <button type="button" class="usa-accordion__button usa-nav__link font-sans-xs" aria-expanded="false" aria-controls="basic-nav-section-two">
+                        <span class="font-sans-xs" style="white-space: nowrap;">Component Library</span>
+                      </button>
+                      <ul id="basic-nav-section-two" class="usa-nav__submenu font-sans-xs">
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/components/component-library.html">
+                            <span>Components</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/patterns/pattern-library.html">
+                            <span>Patterns</span>
+                          </a>
+                        </li>
+                        <li class="usa-nav__submenu-item">
+                          <a href="/site/pages/3-component-library/templates/template-library.html">
+                            <span>Templates</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- Guidelines -->
+                    <li class="usa-nav__primary-item usa-nav__link">
+                      <a href="/site/pages/4-guidelines/guidelines.html" class="font-sans-xs usa-nav-link">
+                        <span style="white-space: nowrap;">Guidelines</span>
+                      </a>
+                    </li>
+                  </ul>
+                <!-- Primary Menu End -->
+
+                <!-- Search bar -->
+                <section aria-label="Search component">
+                  <form class="usa-search usa-search--small" role="search">
+                    <label class="usa-sr-only" for="search-field">Search</label>
+                    <input class="usa-input" id="search-field" type="search" name="search" />
+                    <button class="usa-button" type="submit">
+                      <img src="/dist/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search" />
+                    </button>
+                  </form>
+                </section>
+              </nav>
+            <!-- Primary Navigation End -->
+
+          </div>
+        </header>
+      <!-- Header End -->
+
+      <!-- Body Content Start -->
+        <div class="usa-section usa-prose grid-container">
+          <div class="grid-row grid-gap">
+            <div class="usa-in-page-nav-container">
+
+              <!-- Side Navigation Menu Start -->
+                <div class="usa-sidenav-container grid-col-2 display-none desktop:display-block">
+                  <nav aria-label="Secondary navigation">
+                    <ul class="usa-sidenav">
+
+                      <!-- Style Guide -->
+                      <li class="usa-sidenav__item"><a href="/site/pages/2-style-guide/style-guide.html"><strong>Style Guide</strong></a>
+
+                        <!-- Visual Style -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Visual style</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/2-style-guide/visual-style/color/background-color.html">Background color</a>
+                            <a href="/site/pages/2-style-guide/visual-style/border.html">Border</a>
+                            <a href="/site/pages/2-style-guide/visual-style/outline.html">Outline</a>
+                            <a href="/site/pages/2-style-guide/visual-style/opacity.html">Opacity</a>
+                            <a href="/site/pages/2-style-guide/visual-style/shadow.html">Shadow</a>
+                          </ul>
+                        </li>
+
+                        <!-- Layout -->
+
+                          <!-- Layout -->
+                          <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Layout</strong></a>
+                            <ul class="usa-sidenav__sublist">
+                              <a href="/site/pages/2-style-guide/layout-system/layout/layout-grid.html">Layout grid</a>
+                              <a href="/site/pages/2-style-guide/layout-system/layout/flexbox.html">Flexbox</a>
+                              <a href="/site/pages/2-style-guide/layout-system/layout/display.html">Display</a>
+                              <a href="/site/pages/2-style-guide/layout-system/layout/order.html">Order</a>
+                            </ul>
+                          </li>
+
+                          <!-- Box sizing subgroup -->
+                          <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Box sizing</strong></a>
+                            <ul class="usa-sidenav__sublist">
+                              <a href="/site/pages/2-style-guide/layout-system/box-sizing/shape.html">Shape</a>
+                              <a href="/site/pages/2-style-guide/layout-system/box-sizing/height-width.html">Height + width</a>
+                              <a href="/site/pages/2-style-guide/layout-system/box-sizing/margin-padding.html">Margin + padding</a>
+                              <a href="/site/pages/2-style-guide/layout-system/box-sizing/overflow.html">Overflow</a>
+                            </ul>
+                          </li>
+
+                          <!-- Positioning subgroup -->
+                          <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Positioning</strong></a>
+                            <ul class="usa-sidenav__sublist">
+                              <a href="/site/pages/2-style-guide/layout-system/positioning/position.html">Position</a>
+                              <a href="/site/pages/2-style-guide/layout-system/positioning/pin.html">Pin</a>
+                              <a href="/site/pages/2-style-guide/layout-system/positioning/float.html">Float</a>
+                              <a href="/site/pages/2-style-guide/layout-system/positioning/z-index.html">Z-index</a>
+                            </ul>
+                          </li>
+
+                        <!-- Typography -->
+
+                          <!-- Font -->
+                          <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Font</strong></a>
+                            <ul class="usa-sidenav__sublist">
+                              <a href="/site/pages/2-style-guide/typography/font/family.html">Family</a>
+                              <a href="/site/pages/2-style-guide/typography/font/size.html">Size</a>
+                              <a href="/site/pages/2-style-guide/typography/font/weight.html">Weight</a>
+                              <a href="/site/pages/2-style-guide/typography/font/italic.html">Italic</a>
+                            </ul>
+                          </li>
+
+                          <!-- Text -->
+                          <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Text</strong></a>
+                            <ul class="usa-sidenav__sublist">
+                              <a href="/site/pages/2-style-guide/typography/text/underline.html">Underline</a>
+                              <a href="/site/pages/2-style-guide/typography/text/strikethrough.html">Strikethrough</a>
+                              <a href="/site/pages/2-style-guide/typography/text/text-color.html">Text color</a>
+                              <a href="/site/pages/2-style-guide/typography/text/case.html">Text case</a>
+                              <a href="/site/pages/2-style-guide/typography/text/letterspacing.html">Letterspacing</a>
+                              <a href="/site/pages/2-style-guide/typography/text/vertical-alignment.html">Vertical alignment</a>
+                            </ul>
+                          </li>
+
+                          <!-- Paragraph -->
+                          <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Paragraph</strong></a>
+                            <ul class="usa-sidenav__sublist">
+                              <a href="/site/pages/2-style-guide/typography/paragraph/line-height.html">Line height</a>
+                              <a href="/site/pages/2-style-guide/typography/paragraph/line-length.html">Line length</a>
+                              <a href="/site/pages/2-style-guide/typography/paragraph/indentation.html">Indentation</a>
+                              <a href="/site/pages/2-style-guide/typography/paragraph/alignment.html">Alignment</a>
+                              <a href="/site/pages/2-style-guide/typography/paragraph/whitespace.html">Whitespace</a>
+                            </ul>
+                          </li>
+
+                          <!-- Advanced -->
+                          <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Advanced</strong></a>
+                            <ul class="usa-sidenav__sublist">
+                              <a href="/site/pages/2-style-guide/typography/advanced/spacing-units.html">Spacing units</a>
+                              <a href="/site/pages/2-style-guide/typography/advanced/tabular-numerals.html">Tabular numerals</a>
+                              <a href="/site/pages/2-style-guide/typography/advanced/list-reset.html">List reset</a>
+                            </ul>
+                          </li>
+
+                        <!-- Images -->
+                        <li class="usa-sidenav__item"><a href="javascript:void(0);" style="pointer-events: none"><strong>Images</strong></a>
+                          <ul class="usa-sidenav__sublist">
+                            <a href="/site/pages/2-style-guide/images/logos.html">Logos</a>
+                            <a href="/site/pages/2-style-guide/images/icons.html" class="usa-current">Icons</a>
+                          </ul>
+                        </li>
+
+                        <!-- Utility Variants -->
+                        <li class="usa-sidenav__item">
+                          <a href="/site/pages/2-style-guide/utility-variants/utility-variants.html"><em>Utility variants</em></a>
+                        </li>
+
+                      </li>
+
+                    </ul>
+                  </nav>
+                </div>
+              <!-- Side Navigation Menu End -->
+
+              <!-- In-page Navigation Start -->
+                <aside
+                  class="usa-in-page-nav"
+                  data-heading-elements="h2 h3"
+                  data-title-text="On this page"
+                  data-title-heading-level="h4"
+                  data-scroll-offset="48"
+                  data-root-margin="48px 0px -70% 0px"
+                  data-threshold="1"
+                ></aside>
+
+                <script>
+                  // Add "Return to Top" button into the in-page nav aside after DOM loads
+                  window.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.createElement('a');
+                      btn.href = "#";
+                      btn.style.display = "block";
+                      btn.style.color = "#236430";
+                      btn.style.margin = "-1rem 1rem 0 1.25rem";
+                      btn.style.padding = "0.5rem 0 0.5rem 0.75rem";
+                      btn.style.textDecoration = "none";
+                      btn.style.fontWeight = "400";
+                      btn.style.fontSize = "0.8rem";
+                      btn.style.transition = "background 0.2s";
+                      btn.textContent = "Return to top";
+                      btn.onmouseover = function() { this.style.background = "#f0f0f0"; };
+                      btn.onmouseout = function() { this.style.background = ""; };
+                      btn.onclick = function(e) { e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); };
+                    var aside = document.querySelector('aside');
+                    if (aside) aside.appendChild(btn);
+                  });
+                </script>
+              <!-- In-page Navigation End -->
+
+              <!-- Main Content Start -->
+                <main id="main-content" class="usa-prose grid-col-fill grid-container margin-x-4">
+                  <h1>Icons</h1>
+                  <p class="usa-intro">Icon resources for use in your projects, including USWDS icons and recommended external icon libraries.</p>
+
+                  <br>
+                  <hr>
+
+                  <!-- USWDS Icons -->
+                  <h2 id="uswds-icons">USWDS icons</h2>
+                  <p>The U.S. Web Design System includes a set of 245+ icons designed for government websites. These icons are included with Civic and are located in <code>/dist/uswds/img/usa-icons/</code>.</p>
+
+                  <h3 id="uswds-sample-icons">Sample icons</h3>
+                  <p>Here are some commonly used USWDS icons:</p>
+
+                  <div class="grid-row grid-gap-2 margin-y-3">
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/home.svg" alt="Home icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">home</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/search.svg" alt="Search icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">search</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/menu.svg" alt="Menu icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">menu</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/close.svg" alt="Close icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">close</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/check.svg" alt="Check icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">check</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/error.svg" alt="Error icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">error</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/warning.svg" alt="Warning icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">warning</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/info.svg" alt="Info icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">info</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/settings.svg" alt="Settings icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">settings</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/account_circle.svg" alt="Account circle icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">account_circle</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/mail.svg" alt="Mail icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">mail</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/phone.svg" alt="Phone icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">phone</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/edit.svg" alt="Edit icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">edit</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/delete.svg" alt="Delete icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">delete</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/file_download.svg" alt="File download icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">file_download</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/file_upload.svg" alt="File upload icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">file_upload</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/arrow_forward.svg" alt="Arrow forward icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">arrow_forward</p>
+                    </div>
+                    <div class="grid-col-3 tablet:grid-col-2 text-center padding-2">
+                      <img src="/dist/uswds/img/usa-icons/arrow_back.svg" alt="Arrow back icon" style="width: 32px; height: 32px;">
+                      <p class="font-sans-3xs margin-top-1 margin-bottom-0">arrow_back</p>
+                    </div>
+                  </div>
+
+                  <h3 id="uswds-icon-usage">Using USWDS icons</h3>
+                  <p>Include icons directly via the <code>&lt;img&gt;</code> tag:</p>
+
+                  <pre class="bg-base-lightest padding-2 radius-md overflow-auto"><code>&lt;img src="/dist/uswds/img/usa-icons/home.svg"
+     alt="Home"
+     style="width: 24px; height: 24px;"&gt;</code></pre>
+
+                  <p>Or use the USWDS sprite file for better performance when using multiple icons:</p>
+
+                  <pre class="bg-base-lightest padding-2 radius-md overflow-auto"><code>&lt;svg class="usa-icon" aria-hidden="true" role="img"&gt;
+  &lt;use xlink:href="/dist/uswds/img/sprite.svg#home"&gt;&lt;/use&gt;
+&lt;/svg&gt;</code></pre>
+
+                  <p class="margin-top-3">
+                    <a href="https://designsystem.digital.gov/components/icon/" class="usa-link usa-link--external" target="_blank" rel="noopener">View all USWDS icons on designsystem.digital.gov</a>
+                  </p>
+
+                  <br>
+                  <hr>
+
+                  <!-- Font Awesome -->
+                  <h2 id="font-awesome">Font Awesome</h2>
+                  <p>Font Awesome is one of the most popular icon libraries on the web, offering thousands of free and pro icons. USWDS recommends Font Awesome as a supplemental icon resource.</p>
+
+                  <div class="border-1px border-base-lighter radius-md padding-4 margin-y-3">
+                    <div class="grid-row grid-gap-4 flex-align-center">
+                      <div class="grid-col-12 tablet:grid-col-8">
+                        <h3 class="margin-top-0">Free icons for any project</h3>
+                        <p class="margin-bottom-0">Font Awesome offers 2,000+ free icons in multiple styles (solid, regular, brands). The Pro version includes 26,000+ icons with additional styles and features.</p>
+                        <ul class="margin-top-2">
+                          <li>Available as web fonts or SVGs</li>
+                          <li>Consistent sizing and styling</li>
+                          <li>Accessibility-friendly</li>
+                          <li>Active community and updates</li>
+                        </ul>
+                      </div>
+                      <div class="grid-col-12 tablet:grid-col-4 text-center">
+                        <a href="https://fontawesome.com/" class="usa-button" target="_blank" rel="noopener">Visit Font Awesome</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3 id="font-awesome-usage">Using Font Awesome</h3>
+                  <p>Add the Font Awesome CDN to your HTML <code>&lt;head&gt;</code>:</p>
+
+                  <pre class="bg-base-lightest padding-2 radius-md overflow-auto"><code>&lt;link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"&gt;</code></pre>
+
+                  <p>Then use icons with the <code>&lt;i&gt;</code> element:</p>
+
+                  <pre class="bg-base-lightest padding-2 radius-md overflow-auto"><code>&lt;!-- Solid style --&gt;
+&lt;i class="fa-solid fa-house"&gt;&lt;/i&gt;
+
+&lt;!-- Regular style --&gt;
+&lt;i class="fa-regular fa-envelope"&gt;&lt;/i&gt;
+
+&lt;!-- Brand icons --&gt;
+&lt;i class="fa-brands fa-github"&gt;&lt;/i&gt;</code></pre>
+
+                  <br>
+                  <hr>
+
+                  <!-- Google Material Icons -->
+                  <h2 id="google-material-icons">Google Material Icons</h2>
+                  <p>Google's Material Icons are part of the Material Design system, offering a comprehensive set of icons designed for clarity and simplicity.</p>
+
+                  <div class="border-1px border-base-lighter radius-md padding-4 margin-y-3">
+                    <div class="grid-row grid-gap-4 flex-align-center">
+                      <div class="grid-col-12 tablet:grid-col-8">
+                        <h3 class="margin-top-0">Material Design icons</h3>
+                        <p class="margin-bottom-0">Over 2,500 icons in five styles: Outlined, Rounded, Sharp, Filled, and Two-tone. All icons are free and open source.</p>
+                        <ul class="margin-top-2">
+                          <li>Multiple styles for each icon</li>
+                          <li>Variable font support for customization</li>
+                          <li>SVG and font formats available</li>
+                          <li>Designed for digital interfaces</li>
+                        </ul>
+                      </div>
+                      <div class="grid-col-12 tablet:grid-col-4 text-center">
+                        <a href="https://fonts.google.com/icons" class="usa-button" target="_blank" rel="noopener">Visit Google Icons</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h3 id="google-icons-usage">Using Google Material Icons</h3>
+                  <p>Add the Material Icons font to your HTML <code>&lt;head&gt;</code>:</p>
+
+                  <pre class="bg-base-lightest padding-2 radius-md overflow-auto"><code>&lt;link rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"&gt;</code></pre>
+
+                  <p>Then use icons with the <code>&lt;span&gt;</code> element:</p>
+
+                  <pre class="bg-base-lightest padding-2 radius-md overflow-auto"><code>&lt;span class="material-icons"&gt;home&lt;/span&gt;
+&lt;span class="material-icons"&gt;search&lt;/span&gt;
+&lt;span class="material-icons"&gt;settings&lt;/span&gt;</code></pre>
+
+                  <p>For Material Symbols (newer variable font icons):</p>
+
+                  <pre class="bg-base-lightest padding-2 radius-md overflow-auto"><code>&lt;link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"&gt;
+
+&lt;span class="material-symbols-outlined"&gt;home&lt;/span&gt;</code></pre>
+
+                  <br>
+                  <hr>
+
+                  <!-- Apple SF Symbols -->
+                  <h2 id="apple-sf-symbols">Apple SF Symbols</h2>
+                  <p>Apple's SF Symbols is a comprehensive icon library designed for Apple platforms. While primarily intended for native iOS and macOS development, it's worth knowing about for teams building cross-platform experiences.</p>
+
+                  <div class="border-1px border-base-lighter radius-md padding-4 margin-y-3 bg-base-lightest">
+                    <div class="grid-row grid-gap-4 flex-align-center">
+                      <div class="grid-col-12 tablet:grid-col-8">
+                        <h3 class="margin-top-0">For native Apple development</h3>
+                        <p class="margin-bottom-0">SF Symbols provides 5,000+ symbols designed to integrate seamlessly with San Francisco, the system font for Apple platforms.</p>
+                        <ul class="margin-top-2">
+                          <li>Designed for iOS, macOS, watchOS, and tvOS</li>
+                          <li>Multiple weights and scales</li>
+                          <li>Requires the SF Symbols app (macOS only)</li>
+                          <li><strong>Note:</strong> Not directly usable on the web</li>
+                        </ul>
+                      </div>
+                      <div class="grid-col-12 tablet:grid-col-4 text-center">
+                        <a href="https://developer.apple.com/sf-symbols/" class="usa-button usa-button--outline" target="_blank" rel="noopener">Learn about SF Symbols</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="usa-alert usa-alert--info margin-top-3">
+                    <div class="usa-alert__body">
+                      <p class="usa-alert__text">
+                        <strong>Web development note:</strong> SF Symbols are designed for native app development and cannot be directly used on websites. For web projects, use USWDS icons, Font Awesome, or Google Material Icons instead.
+                      </p>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+
+                  <!-- Best Practices -->
+                  <h2 id="best-practices">Best practices</h2>
+
+                  <h3 id="accessibility">Accessibility</h3>
+                  <ul>
+                    <li>Always provide alternative text for meaningful icons using <code>alt</code> attributes or <code>aria-label</code></li>
+                    <li>Use <code>aria-hidden="true"</code> for decorative icons that don't convey meaning</li>
+                    <li>Ensure sufficient color contrast between icons and backgrounds</li>
+                    <li>Don't rely solely on icons to convey critical information—pair with text labels when possible</li>
+                  </ul>
+
+                  <h3 id="sizing">Sizing</h3>
+                  <ul>
+                    <li>Use consistent icon sizes throughout your interface (16px, 24px, 32px are common)</li>
+                    <li>Match icon size to accompanying text size for visual balance</li>
+                    <li>Ensure touch targets are at least 44x44 pixels for interactive icons on mobile</li>
+                  </ul>
+
+                  <h3 id="consistency">Consistency</h3>
+                  <ul>
+                    <li>Stick to one icon library per project when possible</li>
+                    <li>Use the same icon style throughout (filled, outlined, etc.)</li>
+                    <li>Maintain consistent stroke weights across all icons</li>
+                  </ul>
+
+                  <h3 id="example-accessible-icon">Accessible icon example</h3>
+
+                  <pre class="bg-base-lightest padding-2 radius-md overflow-auto"><code>&lt;!-- Meaningful icon (needs alt text) --&gt;
+&lt;button&gt;
+  &lt;img src="/dist/uswds/img/usa-icons/search.svg" alt="Search"&gt;
+&lt;/button&gt;
+
+&lt;!-- Decorative icon (hidden from assistive tech) --&gt;
+&lt;a href="/home"&gt;
+  &lt;img src="/dist/uswds/img/usa-icons/home.svg" alt="" aria-hidden="true"&gt;
+  Home
+&lt;/a&gt;
+
+&lt;!-- SVG sprite with accessibility --&gt;
+&lt;button aria-label="Close dialog"&gt;
+  &lt;svg class="usa-icon" aria-hidden="true" focusable="false" role="img"&gt;
+    &lt;use xlink:href="/dist/uswds/img/sprite.svg#close"&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+&lt;/button&gt;</code></pre>
+
+                </main>
+              <!-- Main Content End -->
+
+            </div>
+          </div>
+        </div>
+      <!-- Body Content End -->
+
+      <!-- Footer + Identifier Start -->
+        <footer class="usa-footer">
+
+        <!-- Return To Top link -->
+          <div class="grid-container usa-footer__return-to-top">
+          <a href="" class="text-primary" onclick="window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); return false;">Return to top</a>
+          </div>
+
+        <!-- Footer Start -->
+        <div class="usa-footer__primary-section">
+          <nav class="usa-footer__nav" aria-label="Footer navigation">
+            <ul class="grid-row grid-gap-2">
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">About</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Contact</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Help</a>
+              </li>
+              <li class="mobile: grid-col-6 tablet:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
+                <a class="usa-footer__primary-link" href="#">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <!-- Footer End-->
+
+      <!-- Identifier Start -->
+        <div class="usa-identifier">
+
+        <!-- Civic Logo -->
+        <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
+          <div class="usa-identifier__container">
+            <div class="usa-identifier__logos">
+              <a href="#" class="usa-identifier__logo"
+                ><img
+                  class="usa-identifier__logo-img"
+                  src="/site/images/civic-logo/civic-wordmark.svg"
+                  alt="Civic logo"
+                  role="img">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Identifier Links -->
+        <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
+          <div class="usa-identifier__container">
+            <ul class="usa-identifier__required-links-list">
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">About [Parent shortname]</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Accessibility statement</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">FOIA requests</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">No FEAR Act data</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Office of the Inspector General</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Performance reports</a>
+              </li>
+              <li class="usa-identifier__required-links-item">
+                <a href="#" class="usa-identifier__required-link usa-link--external" target="_blank" rel="noopener">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+          <!-- Visit USA.gov -->
+            <section
+              class="usa-identifier__section usa-identifier__section--usagov"
+              aria-label="U.S. government information and services">
+              <div class="usa-identifier__container">
+                <div class="usa-identifier__usagov-description">
+                  Looking for U.S. government information and services?
+                </div>
+                <a href="https://www.usa.gov/" class="usa-link--external" target="_blank" rel="noopener">Visit USA.gov</a>
+              </div>
+            </section>
+        </div>
+      <!-- Identifier End -->
+
+    </body>
+  <!-- Body End -->
+
+
+  <!-- Scripts
+  ================================================== -->
+  <script src="/dist/uswds/js/uswds.min.js"></script>
+
+</html>
