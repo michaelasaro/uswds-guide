@@ -44,6 +44,7 @@
 // 🎨 PRIMARY COLORS
 // -------------------------------------------------------------------------------------------------
 // Your main brand color. Used for buttons, links, and key UI elements.
+// FPAC uses a green palette.
 // -------------------------------------------------------------------------------------------------
 
 // $theme-color-primary-family: "green";
@@ -54,15 +55,15 @@
     // Default: false
     // Use grades 0-10. Set to false if not used.
 
-$theme-color-primary-lighter: "blue-10";
+$theme-color-primary-lighter: #DEE8E0;
     // Default: "blue-10"
     // A very light tint of your primary color
 
-$theme-color-primary-light: "blue-30";
+$theme-color-primary-light: #B2C9B7;
     // Default: "blue-30"
     // A light shade for backgrounds and hover states
 
-$theme-color-primary: "blue-60v";
+$theme-color-primary: #4D8157;
     // Default: "blue-60v"
     // ⭐ YOUR MAIN BRAND COLOR - used for buttons, links, etc.
 
@@ -70,11 +71,11 @@ $theme-color-primary: "blue-60v";
     // Default: "blue-warm-60v"
     // A vivid version of the primary color
 
-$theme-color-primary-dark: "blue-70v";
+$theme-color-primary-dark: #236430;
     // Default: "blue-warm-70v"
     // Darker shade for hover states and emphasis
 
-$theme-color-primary-darker: "blue-80v";
+$theme-color-primary-darker: #1A4B24;
     // Default: "blue-warm-80v"
     // Darkest shade for text on light backgrounds
 
@@ -87,6 +88,7 @@ $theme-color-primary-darker: "blue-80v";
 // 🎨 SECONDARY COLORS
 // -------------------------------------------------------------------------------------------------
 // Your secondary brand color. Used for accents and secondary actions.
+// FPAC uses a blue palette.
 // -------------------------------------------------------------------------------------------------
 
 // $theme-color-secondary-family: "blue";
@@ -97,15 +99,15 @@ $theme-color-primary-darker: "blue-80v";
     // Default: false
     // Use grades 0-10. Set to false if not used.
 
-$theme-color-secondary-lighter: "red-cool-10";
+$theme-color-secondary-lighter: #DEE5EF;
     // Default: "red-cool-10"
     // A very light tint of your secondary color
 
-$theme-color-secondary-light: "red-cool-30";
+$theme-color-secondary-light: #BCCCDF;
     // Default: "red-30"
     // A light shade for backgrounds
 
-$theme-color-secondary: "red-cool-50";
+$theme-color-secondary: #4F78AA;
     // Default: "red-50"
     // ⭐ YOUR SECONDARY COLOR
 
@@ -113,11 +115,11 @@ $theme-color-secondary: "red-cool-50";
     // Default: "red-cool-50v"
     // A vivid version of the secondary color
 
-$theme-color-secondary-dark: "red-cool-60v";
+$theme-color-secondary-dark: #205493;
     // Default: "red-60v"
     // Darker shade for emphasis
 
-$theme-color-secondary-darker: "red-cool-70v";
+$theme-color-secondary-darker: #183F6E;
     // Default: "red-70v"
     // Darkest shade
 
@@ -130,6 +132,7 @@ $theme-color-secondary-darker: "red-cool-70v";
 // 🎨 ACCENT WARM COLORS
 // -------------------------------------------------------------------------------------------------
 // Warm accent color for highlights and callouts.
+// FPAC uses an earthy tan/terracotta palette.
 // -------------------------------------------------------------------------------------------------
 
 // $theme-color-accent-warm-family: "terracotta";
@@ -140,23 +143,23 @@ $theme-color-secondary-darker: "red-cool-70v";
     // Default: false
     // Use grades 0-10. Set to false if not used.
 
-$theme-color-accent-warm-lighter: "orange-10";
+$theme-color-accent-warm-lighter: #F5ECE1;
     // Default: "orange-10"
     // Very light warm accent
 
-$theme-color-accent-warm-light: "orange-20v";
+$theme-color-accent-warm-light: #E8D3B3;
     // Default: "orange-20v"
     // Light warm accent
 
-$theme-color-accent-warm: "orange-30v";
+$theme-color-accent-warm: #C97B3E;
     // Default: "orange-30v"
     // ⭐ YOUR WARM ACCENT COLOR
 
-$theme-color-accent-warm-dark: "orange-50v";
+$theme-color-accent-warm-dark: #9B5028;
     // Default: "orange-50v"
     // Dark warm accent
 
-$theme-color-accent-warm-darker: "orange-60";
+$theme-color-accent-warm-darker: #6A2F18;
     // Default: "orange-60"
     // Darkest warm accent
 
@@ -169,6 +172,7 @@ $theme-color-accent-warm-darker: "orange-60";
 // 🎨 ACCENT COOL COLORS
 // -------------------------------------------------------------------------------------------------
 // Cool accent color for additional visual interest.
+// FPAC uses a teal palette.
 // -------------------------------------------------------------------------------------------------
 
 // $theme-color-accent-cool-family: "pond";
@@ -179,23 +183,23 @@ $theme-color-accent-warm-darker: "orange-60";
     // Default: false
     // Use grades 0-20. Set to false if not used.
 
-$theme-color-accent-cool-lighter: "blue-cool-5v";
+$theme-color-accent-cool-lighter: #DFF9F4;
     // Default: "blue-cool-5v"
     // Very light cool accent
 
-$theme-color-accent-cool-light: "blue-cool-20v";
+$theme-color-accent-cool-light: #A7EDE4;
     // Default: "blue-cool-20v"
     // Light cool accent
 
-$theme-color-accent-cool: "cyan-30v";
+$theme-color-accent-cool: #3FA39A;
     // Default: "cyan-30v"
     // ⭐ YOUR COOL ACCENT COLOR
 
-$theme-color-accent-cool-dark: "blue-cool-40v";
+$theme-color-accent-cool-dark: #2A7A6F;
     // Default: "blue-cool-40v"
     // Dark cool accent
 
-$theme-color-accent-cool-darker: "blue-cool-60v";
+$theme-color-accent-cool-darker: #154D41;
     // Default: "blue-cool-60v"
     // Darkest cool accent
 
@@ -415,7 +419,7 @@ $theme-link-color: "primary";
     // Default: "primary"
     // Link default color
 
-$theme-link-visited-color: "violet-70v";
+$theme-link-visited-color: "primary-darker";
     // Default: "violet-70v"
     // Link visited color
 
