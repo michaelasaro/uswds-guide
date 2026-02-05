@@ -13,8 +13,8 @@ A customizable design system built on the [U.S. Web Design System (USWDS)](https
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/michaelasaro/uswds-guide.git
-cd uswds-guide
+git clone https://github.com/michaelasaro/civic-guide.git
+cd civic-guide
 
 # 2. Install dependencies
 npm install
@@ -61,7 +61,7 @@ The tour is stored in `.tours/` and ships with the repo, so anyone who clones it
 ## Project Structure
 
 ```
-uswds-guide/
+civic-guide/
 ├── src/                          # Source files
 │   ├── styles/                   # Sass source files
 │   │   ├── index.scss            # Main entry point (3 layers)
