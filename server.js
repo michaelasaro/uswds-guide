@@ -21,12 +21,13 @@ const app = express();
 const path = require('path');
 const port = 3000;
 
-// Serve compiled assets from dist/ at root paths (/civic/, /uswds/)
+// Serve project root first for /site/, index.html, etc.
+// This ensures source file edits are reflected immediately without rebuilding
+app.use(express.static(path.join(__dirname, './')));
+
+// Serve compiled assets from dist/ as fallback (/civic/, /uswds/)
 // This mirrors the GitHub Pages structure where dist/ contents are the root
 app.use(express.static(path.join(__dirname, 'dist')));
-
-// Serve project root for /site/, index.html, etc.
-app.use(express.static(path.join(__dirname, './')));
 
 // Start the server
 app.listen(port, () => {
